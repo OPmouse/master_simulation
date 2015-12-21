@@ -1,6 +1,11 @@
-/* ran.c */
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+
+/* ran1.c */
 /***********************************************
- radam value generation
+ random value generator [0,1)
  ***********************************************/
 #include <stdio.h>
 #include <math.h>

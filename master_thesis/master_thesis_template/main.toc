@@ -1,0 +1,36 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {chapter}{\numberline {2}Wireless Sensor Networks}{3}
+\contentsline {section}{\numberline {2.1}Main technical issues in WSNs}{4}
+\contentsline {section}{\numberline {2.2}Wireless protocols}{7}
+\contentsline {subsection}{\numberline {2.2.1}ZigBee over IEEE 802.15.4}{7}
+\contentsline {subsection}{\numberline {2.2.2}Bluetooth over IEEE 802.15.1}{7}
+\contentsline {subsection}{\numberline {2.2.3}UWB over IEEE 802.15.3}{9}
+\contentsline {subsection}{\numberline {2.2.4}Wi-Fi over IEEE 802.11 a/b/g}{9}
+\contentsline {chapter}{\numberline {3}Information Gathering Method with Information Converting to Frequency and Timing}{10}
+\contentsline {section}{\numberline {3.1}Outline and Process of Information Gathering}{10}
+\contentsline {section}{\numberline {3.2}Information Converting to Wireless Parameters}{12}
+\contentsline {subsection}{\numberline {3.2.1}Frequency Mapping of Sensed Data}{12}
+\contentsline {subsection}{\numberline {3.2.2}Timing Mapping of Positional Data}{13}
+\contentsline {section}{\numberline {3.3}Information Estimation}{14}
+\contentsline {subsection}{\numberline {3.3.1}Information Extraction from Received Signals}{14}
+\contentsline {subsection}{\numberline {3.3.2}AE Methods based on Spatial Correlation}{15}
+\contentsline {subsection}{\numberline {3.3.3}LE Methods based on Positional Data}{16}
+\contentsline {section}{\numberline {3.4}Discussion of Performance}{18}
+\contentsline {subsection}{\numberline {3.4.1}Time Efficiency}{18}
+\contentsline {subsection}{\numberline {3.4.2}Theoretical Analysis}{20}
+\contentsline {subsection}{\numberline {3.4.3}Relation between Spatial Correlation and Estimation Accuracy}{21}
+\contentsline {section}{\numberline {3.5}Issue in Applying to WA-WSNs}{22}
+\contentsline {chapter}{\numberline {4}Proposed Method}{24}
+\contentsline {section}{\numberline {4.1}Outline and Process of IGM-ICFT for WA-WSNs}{24}
+\contentsline {section}{\numberline {4.2}Shift of Frequency Mapping}{26}
+\contentsline {chapter}{\numberline {5}Simulation}{29}
+\contentsline {section}{\numberline {5.1}Simluation Model}{29}
+\contentsline {section}{\numberline {5.2}Simulation Result}{29}
+\contentsline {subsection}{\numberline {5.2.1}Relation between Estimation Accuracy and Group Size}{29}
+\contentsline {subsection}{\numberline {5.2.2}Relation between Estimation Accuracy and Number of Reference Signals}{30}
+\contentsline {chapter}{\numberline {6}Conclusion}{35}
+\contentsline {chapter}{Acknowledgement}{36}
+\contentsline {chapter}{References}{37}
+\contentsline {chapter}{Publications}{39}
+\contentsline {chapter}{Appendix}{41}
+\contentsfinish 

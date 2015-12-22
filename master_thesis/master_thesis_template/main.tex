@@ -1,0 +1,46 @@
+%
+% master thesis
+%
+\documentclass[a4paper,11pt,onecolumn,oneside,openany]{book}
+\usepackage{./thesis}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage[fleqn]{amsmath}
+\usepackage{titletoc}
+\usepackage{color}
+\usepackage{subfigure}
+% subfigure: 副題の文字サイズ
+\renewcommand{\subcapsize}{\small}
+%
+%
+%
+\begin{document}
+% setting ---
+%\mojiparline{35}	% 一行あたり文字数の指定
+\linesparpage{40}	% 1ページあたり行数の指定
+\input{0_cover.tex}
+% abstruct ---
+\input{0_abst.tex}
+% table of contents ---
+%\tableofcontents
+% introduction --- 
+\input{introduction.tex}
+% proposed method ---
+\input{propose.tex}
+% simmulation
+\input{result.tex}
+% conclusion ----
+\input{conclude.tex}
+
+% list of figure/tables
+% \listoffigures
+% \listoftables
+%\bibliographystyle{}	% bib style
+%\bibliography{}	% your bib database
+
+\input{acknowledgement.tex}
+\input{reference.tex}
+\input{publication.tex}
+\input{appendix.tex}
+
+\end{document}

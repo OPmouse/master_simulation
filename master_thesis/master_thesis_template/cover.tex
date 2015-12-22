@@ -1,0 +1,47 @@
+\documentclass[a4paper,11pt,openany]{book}
+\setlength{\textheight}{\paperheight}   % 紙面縦幅を本文領域にする（BOTTOM=-TOP）
+\setlength{\topmargin}{4.6truemm}       % 上の余白を30mm（=1inch+4.6mm）に
+\addtolength{\topmargin}{-\headheight}  % 
+\addtolength{\topmargin}{-\headsep}     % ヘッダの分だけ本文領域を移動させる
+\addtolength{\textheight}{-60truemm}    % 下の余白も30mm（BOTTOM=-TOPだから+TOP+30mm）
+\setlength{\textwidth}{\paperwidth}     % 紙面横幅を本文領域にする（RIGHT=-LEFT）
+\setlength{\oddsidemargin}{0truemm}  % 左の余白を25mm(=1inch-0.4mm)に
+\setlength{\evensidemargin}{0truemm} % 
+\addtolength{\textwidth}{-50truemm}     % 右の余白も25mm（RIGHT=-LEFT）
+
+\makeatletter
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+  \vspace*{20mm}
+
+  {\LARGE 平成27年度修士論文\\}
+
+  \vspace{10mm}
+
+  {\Huge\bf English Title\\}
+
+  \vspace{5mm}
+
+  {\huge\bf 日本語タイトル\\}
+
+  \vspace{10mm}
+
+  \begin{table}[h]
+    \LARGE
+    \begin{center}
+      \begin{tabular}{ll}
+        学生番号 & 1431xxx\\
+        氏名 & \\
+        情報・通信工学専攻  & 情報通信システムコース\\
+        主指導教員 & 藤井 威生 教授\\
+        指導教員 & 山尾 泰 教授\\
+        提出日 & 平成28年1月29日\\
+      \end{tabular}
+    \end{center}
+  \end{table}
+  
+\end{center}
+\end{document}

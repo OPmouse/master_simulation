@@ -1,16 +1,19 @@
 //parameter
 //wang hao 2013.12.28     ver1.0
+//for test
+#define BIT 100000
 
-#define SAMPLE         2048
+#define SAMPLE         20480
 #define iteration      10000/*観測回数*/
 #define trial 10
-#define PU_Power       10  /*PUの送信電力10dBm*/
-#define MIN_DIST       5
-#define MAX_DIST       100
+#define Tx_Power       10  /*PUの送信電力10dBm*/
+#define MIN_DIST       150  /*[m]*/
+#define MAX_DIST       150 /*[m]*/
 #define AVERAGE_ON  100000.0      //average on time  = 100[ms]
 #define AVERAGE_OFF 400000.0      //average off time = 100[ms]
 #define Ts 5
 
+//Channel parameter
 /*noise*/
 #define NOISE -103.0103           /*I相Q相の雑音電力-103.0103dBm*/
 #define NOISE_sinti 0.00000000005 /*I相Q相の雑音電力の真値*/
@@ -18,11 +21,23 @@
 #define NOISE_POWER -100         /*雑音電力 -100dBm*/
 
 /*path loss*/
+#define c 300000000              /*light speed*/
 #define GT 2.0                   /*gain(dBi)*/
 #define GR 2.0                   /*gain(dBi)*/
 #define expon 3.0                /*path-loss exponent*/
 #define ref_dis 1               /*reference distance* 1 (m)*/
 
+/*fading parameter*/
+#define wave_number     15        /*素波数*/
+#define c 300000000               /*光速度*/
+#define kizami 1000000          /*刻み：1 micro second*/
+/*shadowing parameter*/
+#define SHAD_SIGMA 8.0
+#define SHADOWING 0.0 //[dB]
+
+#define AWGN 0
+#define AWGN_FADING 1
+#define FADING 2
 
 /*PU parameter*/
 #define PU_x 0              /*PUのx座標*/
@@ -70,15 +85,7 @@
 #define transition_correct_MODE 1 /*0->1*/
 #define MN_MODE 1
 
-/*database*/
-#define hard_AND_thershold 10    /*硬判定ANDルール閾値*/
 
-/*fading parameter*/
-#define wave_number     15        /*素波数*/
-#define c 300000000               /*光速度*/
-#define kizami 1000000          /*刻み：1 micro second*/
-/*shadowing parameter*/
-#define SHAD_SIGMA 8.0
 /*KS test*/
 #define EPS1 0.001
 #define EPS2  1.0e-8

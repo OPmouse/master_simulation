@@ -4,6 +4,13 @@
 #include <time.h>
 #include "param.h"
 
+double pathloss(double dist) {
+  double pr;
+  double lambda =(double) c / (double)Frequency;
+  pr = 20.0*log10(lambda/(4*M_PI*ref_dis)) - 10.0*expon*log10((1+dist)/ref_dis);
+  return pr;//[dB]
+}
+
 /*AWGNの電力　真値*/
 double awgn_power(int *idum){
     double awgn(int *);
@@ -14,45 +21,6 @@ double awgn_power(int *idum){
     //printf("%e,%e\n",I,Q);
     N_P=I*I+Q*Q;
     return N_P;
-}
-
-/*fading coexistence generation based on jakes model*/
-double fading(int time,double f_D,int *idum){
-  double ran1(int *);
-  int i;
-  double rx_real[wave_number];
-  double rx_imaginary[wave_number];
-  double rx_angle[wave_number];
-  double theta[wave_number];
-  double g_real=0.0;
-  double g_imaginary=0.0;
-  double g_m_real;
-  double g_m_imaginary;
-  double h;
-  /*到来角*/
-  rx_angle[0]=2*ran1(idum)*M_PI;
-  for (i=1; i<wave_number;i++) {
-    rx_angle[i]=rx_angle[0]+2*M_PI*(double)i/(double)wave_number;
-  }
-  /*素波の位相*/
-  for (i=0; i<wave_number; i++) {
-    theta[i]=2*ran1(idum)*M_PI;
-  }
-  
-  for (i=0; i<wave_number; i++) {
-    rx_real[i]     =cos(2*M_PI*cos(rx_angle[i]*f_D*(double)time/kizami)+theta[i]);
-    rx_imaginary[i]=sin(2*M_PI*cos(rx_angle[i]*f_D*(double)time/kizami)+theta[i]);
-  }
-  for (i=0; i<wave_number; i++) {
-    g_real+=rx_real[i];
-    g_imaginary+=rx_imaginary[i];
-  }
-  /*複素係数の正規化*/
-  g_m_real=g_real/sqrt((double)wave_number);
-  g_m_imaginary=g_imaginary/sqrt((double)wave_number);
-  
-  h=pow(g_m_real, 2.0)+pow(g_m_imaginary, 2.0);
-  return h;
 }
 
 /*simplified fading function*/
@@ -68,7 +36,7 @@ double fading_dB(int *idum) {
     y += sin(rad);
   }
   fg = (x*x + y*y)/wave_number;
-  return 10*log10(fg);
+  return fg;
 }
 
 /*log-normal shadowing function*/
@@ -86,3 +54,31 @@ double shadowing(int *idum) {
   return shad_db;//[dB]
 }
 
+/*channel function including Pathloss,AWGN and Fading*/
+void channel(double *Rx_P,int dist,int MODE,int *idum) {
+  double dB2real(double dBm);
+  double ran1(int *idum);
+  int i;
+
+  //only AWGN
+  if(MODE == AWGN) {
+    for(i=0;i<SAMPLE;i++) {
+      Rx_P[i] = dB2real(Tx_Power + pathloss((double)dist))+awgn_power(idum);
+      printf("%d,%lf\n",i,10*log10(Rx_P[i]));
+    }//for
+  }//if
+  
+  //only Fading
+  if(MODE == FADING) {
+    for(i=0;i<SAMPLE;i++) {
+      Rx_P[i] = dB2real(Tx_Power + pathloss((double)dist) + fading_dB(idum));
+    }//for
+  }//if
+
+  //AWGN+Fading
+  if(MODE == AWGN_FADING) {
+    for(i=0;i<SAMPLE;i++) {
+      Rx_P[i] = dB2real(Tx_Power + pathloss((double)dist) + fading_dB(idum))+awgn_power(idum);
+    }//for
+  }//if
+}

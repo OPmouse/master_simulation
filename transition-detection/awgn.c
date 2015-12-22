@@ -18,5 +18,3 @@ double awgn(int *idum){
     z=sqrt(-2.0*nvar*log(x))*cos(2.0*M_PI*y);
     return z;
 }
-
-

@@ -1,7 +1,7 @@
 #
 # compiler selection
 #
-CC		= gcc
+CC		= clang
 #CC		= cc
 
 CFLAGS		= -O2		# for optimization
@@ -33,7 +33,6 @@ OBJS		= ran1.o \
 		  dierfc.o \
 		  main.o \
 		  awgn.o  \
-		  pathloss.o \
 		  poidev.o \
 		  dB2real.o \
 		  channel.o \
@@ -49,7 +48,6 @@ SRCS		= ran1.c \
 		  dierfc.c \
 		  main.c \
 		  awgn.c  \
-		  pathloss.c \
 		  poidev.c \
 		  dB2real.c \
 		  channel.c \
@@ -111,13 +109,10 @@ awgn.o:/usr/include/stdio.h  \
 	/usr/include/math.h param.h
 channel.o:/usr/include/stdio.h  \
 	 /usr/include/stdlib.h \
-	/usr/include/math.h param.h 
-pathloss.o:/usr/include/stdio.h  \
-	 /usr/include/stdlib.h \
 	/usr/include/math.h param.h
 poidev.o:/usr/include/stdio.h  \
 	 /usr/include/stdlib.h \
 	/usr/include/math.h param.h
-count.c:/usr/include/stdio.h  \
+count.o:/usr/include/stdio.h  \
 	 /usr/include/stdlib.h \
 	/usr/include/math.h param.h

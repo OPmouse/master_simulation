@@ -14,6 +14,13 @@
 
 char TRAFFIC[204800000];
 
+void print_array(double *data,int num) {
+  int i;
+  for(i=0;i<num;i++) {
+    printf("%lf\n",10*log10(data[i]));
+  }
+}
+
 int main() {
     double ran1(int *);/*random value generator [0,1)*/
     double dierfc(double );/* inverse of error function in double precision */
@@ -22,6 +29,9 @@ int main() {
     double dB2real(double dBm);
     double pathloss(double);
     double poidev(double ave,int *idum);
+    double fading_dB(int *idum);/*fading function*/
+    double shadowing(int *idum);/*log-normal shadowing function*/
+    void channel(double *,int,int,int*);
 
     int count_ON(int *,int );
     int count_OFF2OFF(int *,int );
@@ -31,6 +41,9 @@ int main() {
 
     int i,j;
     int sn;
+    int L;
+    
+    double Rx_Power;
     double Statistic[SAMPLE];
     double Statistic_transition[SAMPLE];
     
@@ -45,7 +58,10 @@ int main() {
     double Upload_value_2 = 0.0,UploadTransition_value_2 = 0.0;
     
     double threshold;
+
     int correct = 0;
+    int error = 0;
+
     int correct_transition = 0;
     int tmp1=0,tmp2;
     int bool=0;
@@ -54,6 +70,11 @@ int main() {
     int iter;
     double ave_upload=0.0,ave_upload_transition=0.0;
     double var_upload=0.0,var_upload_transition=0.0;
+
+    int s_data[BIT];
+    double s_sig[BIT];
+    double r_sig[BIT];
+    int r_data[BIT];
 
     /*time initialization*/
     int p,n;
@@ -70,7 +91,14 @@ int main() {
   
     threshold = sqrt(2.0)*NOISE_SINTI*dierfc(2*P_FA)/sqrt((double)SAMPLE)+NOISE_SINTI;
     
-    
+    for (L=MIN_DIST;L<=MAX_DIST;L=L+10) {
+      //channel(Statistic,L,AWGN,&p);
+      //channel(Statistic,L,FADING,&p);
+      channel(Statistic,L,AWGN_FADING,&p);
+      print_array(Statistic,SAMPLE);
+      //printf("Distance: %d [m],Rx_Power=%lf \n",L,Rx_Power);
+    }
+
 
 
     return 0;

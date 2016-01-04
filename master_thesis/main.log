@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  4 JAN 2016 18:20
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  4 JAN 2016 18:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -187,7 +187,13 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 7.
  [2
 
-]) (./introduction.tex [3
+]) [3
+
+] (./main.toc)
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+ (./introduction.tex [4
 
 ]
 Chapter 1.
@@ -212,13 +218,17 @@ Chapter 4.
 ]) (./reference.tex [5
 
 ]
+Missing character: There is no ^^e2 in font cmr10!
+Missing character: There is no ^^80 in font cmr10!
+Missing character: There is no ^^93 in font cmr10!
+
 
 LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 6.
+(Font)              using `JT1/mc/m/n' instead on input line 4.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 6.
+(Font)              using `JY1/mc/m/n' instead on input line 4.
 
 ) (./publication.tex [6
 
@@ -232,12 +242,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 1746 strings out of 495129
- 21886 string characters out of 6182594
+ 1761 strings out of 495129
+ 22057 string characters out of 6182594
  79741 words of memory out of 5000000
- 5078 multiletter control sequences out of 15000+600000
+ 5090 multiletter control sequences out of 15000+600000
  20920 words of font info for 81 fonts, out of 8000000 for 9000
  80 hyphenation exceptions out of 8191
  27i,11n,24p,1259b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (12 pages, 10424 bytes).
+Output written on main.dvi (13 pages, 14280 bytes).

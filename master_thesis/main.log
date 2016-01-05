@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  4 JAN 2016 19:13
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  5 JAN 2016 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -143,7 +143,11 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip50
 \subfig@bottom=\skip51
-) (./main.aux)
+) (./main.aux
+
+LaTeX Warning: Label `chapter:CR' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -162,7 +166,7 @@ LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
-(./0_cover.tex
+ (./0_cover.tex
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <20.74> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <20.74> not available
@@ -189,13 +193,13 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 
 ]) [3
 
-] (./main.toc)
+] (./main.toc [4
+
+])
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
- (./introduction.tex [4
-
-]
+ (./introduction.tex [5]
 Chapter 1.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 6.
@@ -209,18 +213,28 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 9.
-) (./propose.tex [1
+) (./database.tex [1
 
 ]
 Chapter 3.
-) (./result.tex [2
+) (./propose.tex [1
 
 ]
 Chapter 4.
-) (./conclude.tex [3
+
+Overfull \hbox (4.76202pt too wide) in paragraph at lines 4--4
+[]\OT1/cmr/bx/n/14.4 Transition Point De-tec-tion Method un-der Mul-ti-ple ON/O
+FF
+ []
+
+) (./result.tex [2
 
 ]
 Chapter 5.
+) (./conclude.tex [3
+
+]
+Chapter 6.
 ) (./acknowledgement.tex [4
 
 ]) (./reference.tex [5
@@ -248,14 +262,17 @@ LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 1768 strings out of 495129
- 22149 string characters out of 6182594
+ 1771 strings out of 495129
+ 22183 string characters out of 6182594
  79741 words of memory out of 5000000
  5094 multiletter control sequences out of 15000+600000
  21227 words of font info for 82 fonts, out of 8000000 for 9000
  80 hyphenation exceptions out of 8191
  27i,11n,24p,1259b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (14 pages, 18000 bytes).
+Output written on main.dvi (16 pages, 22528 bytes).

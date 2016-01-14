@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  14 JAN 2016 21:25
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  14 JAN 2016 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -212,7 +212,9 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 7.
 File: traffic_trend.pdf Graphic file (type pdf)
-<traffic_trend.pdf> [1
+<traffic_trend.pdf>
+File: frequency_alloc.pdf Graphic file (type pdf)
+ <frequency_alloc.pdf> [1
 
 ]) (./cognitive.tex [2]
 Chapter 2.
@@ -277,12 +279,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1829 strings out of 495129
- 23188 string characters out of 6182594
- 82160 words of memory out of 5000000
- 5143 multiletter control sequences out of 15000+600000
+ 1832 strings out of 495129
+ 23235 string characters out of 6182594
+ 323074 words of memory out of 5000000
+ 5145 multiletter control sequences out of 15000+600000
  21227 words of font info for 82 fonts, out of 8000000 for 9000
  80 hyphenation exceptions out of 8191
- 27i,11n,33p,1559b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,11n,33p,31666b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (18 pages, 29880 bytes).
+Output written on main.dvi (18 pages, 30284 bytes).

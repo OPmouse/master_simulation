@@ -13,7 +13,7 @@
 \contentsline {section}{\numberline {3.2}Measurement-based Spectrum Database}{1}
 \contentsline {subsection}{\numberline {3.2.1}Spectrum Datbase Construction based on Energy Detection}{1}
 \contentsline {section}{\numberline {3.3}Problem of Spectrum Database Construction }{1}
-\contentsline {chapter}{\numberline {4}Active Period Detection Method of Primary Signal for Radio Environment Database}{2}
+\contentsline {chapter}{\numberline {4}Active Period Detection Method of Primary Signal for Spectrum Database}{2}
 \contentsline {section}{\numberline {4.1}System Model}{2}
 \contentsline {section}{\numberline {4.2}Transition Point Detection Method under Multiple ON/OFF Environment }{2}
 \contentsline {subsection}{\numberline {4.2.1}CUSUM}{2}

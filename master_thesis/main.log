@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  15 JAN 2016 15:52
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  15 JAN 2016 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -216,7 +216,7 @@ File: traffic_trend.pdf Graphic file (type pdf)
 File: frequency_alloc.pdf Graphic file (type pdf)
  <frequency_alloc.pdf> [1
 
-]) (./cognitive.tex [2] [3]
+] [2]) (./cognitive.tex [3]
 Chapter 2.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 9.
@@ -258,11 +258,11 @@ Missing character: There is no ^^93 in font cmr10!
 
 
 LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 5.
+(Font)              using `JT1/mc/m/n' instead on input line 6.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 5.
+(Font)              using `JY1/mc/m/n' instead on input line 6.
 
 [6
 
@@ -287,4 +287,4 @@ Here is how much of TeX's memory you used:
  80 hyphenation exceptions out of 8191
  27i,11n,33p,31666b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (19 pages, 32228 bytes).
+Output written on main.dvi (19 pages, 33712 bytes).

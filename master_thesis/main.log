@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  18 JAN 2016 16:09
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  18 JAN 2016 21:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ pLaTeX2e <2006/11/10> (based on LaTeX2e <2011/06/27> patch level 0)
 Babel <3.9h> and hyphenation patterns for 11 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk11.clo
-File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count81
 \c@chapter=\count82
@@ -169,9 +169,9 @@ LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 (./0_cover.tex
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <20.74> not available
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 9.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <20.74> not available
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 9.
  [1
 
@@ -183,19 +183,21 @@ Overfull \hbox (12.00002pt too wide) in paragraph at lines 55--72
 ) (./0_abst.tex [1
 
 ]
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 7.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 7.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 7.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 7.
  [2
 
 ]) [3
 
-] (./main.toc [4
+] (./main.toc
+Overfull \hbox (11.432pt too wide) in paragraph at lines 16--16
+ [] []\OT1/cmr/bx/n/12 Active Pe-riod De-tec-tion Method of Pri-mary Sig-nal fo
+r Spec-trum Database []  
+ []
+
+[4
 
 ])
 \tf@toc=\write3
@@ -203,9 +205,9 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 
  (./introduction.tex [5]
 Chapter 1.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 7.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 7.
 File: traffic_trend.pdf Graphic file (type pdf)
 <traffic_trend.pdf>
@@ -219,44 +221,41 @@ File: CR_space.eps Graphic file (type eps)
  <CR_space.eps>
 [3]
 File: database.eps Graphic file (type eps)
- <database.eps> [4]) (./cognitive.tex [5]
+ <database.eps> [4] [5]) (./cognitive.tex [6]
 Chapter 2.
 File: cognitive_cycle.eps Graphic file (type eps)
-<cognitive_cycle.eps>
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 16.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 16.
-) (./database.tex [6
+<cognitive_cycle.eps> [7
 
-] [7]
+]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 24.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 24.
+) (./database.tex [8]
 Chapter 3.
-) (./propose.tex [8
+) (./propose.tex [9
 
 ]
 Chapter 4.
-
-Overfull \hbox (4.76202pt too wide) in paragraph at lines 7--7
-[]\OT1/cmr/bx/n/14.4 Transition Point De-tec-tion Method un-der Mul-ti-ple ON/O
-FF
- []
-
-) (./result.tex [9
+) (./result.tex [10
 
 ]
 Chapter 5.
-) (./conclude.tex [10
+) (./conclude.tex [11
 
 ]
 Chapter 6.
-) (./acknowledgement.tex [11
+) (./acknowledgement.tex [12
 
-]) (./reference.tex [12
+]) (./reference.tex [13
 
 ]
-Missing character: There is no ^^e2 in font cmr10!
-Missing character: There is no ^^80 in font cmr10!
-Missing character: There is no ^^93 in font cmr10!
+Missing character: There is no ^^e2 in font cmr12!
+Missing character: There is no ^^80 in font cmr12!
+Missing character: There is no ^^93 in font cmr12!
+Missing character: There is no ^^e2 in font cmr12!
+Missing character: There is no ^^80 in font cmr12!
+Missing character: There is no ^^93 in font cmr12!
 
 
 LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
@@ -266,11 +265,23 @@ LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
 (Font)              using `JY1/mc/m/n' instead on input line 6.
 
-) (./publication.tex [13
+[14
 
-]) (./appendix.tex [14
+]) (./publication.tex [15]
+Overfull \hbox (4.6817pt too wide) in paragraph at lines 7--8
+[]$[]$\OT1/cmr/m/n/12 , Takeo Fu-jii, "Tran-si-tion de-tec-tion with Spec-trum 
+Database us-ing Weighted
+ []
 
-]) [15
+
+Overfull \hbox (12.88998pt too wide) in paragraph at lines 10--11
+[]$[]$\OT1/cmr/m/n/12 , Koya Sato, Takeo Fu-jii, "Re-ceived Power De-tec-tion u
+n-der Mul-ti-ple ON/OFF
+ []
+
+) (./appendix.tex [16
+
+]) [17
 
 ] (./main.aux)
 
@@ -278,12 +289,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 1847 strings out of 495129
- 23464 string characters out of 6182594
- 323416 words of memory out of 5000000
- 5156 multiletter control sequences out of 15000+600000
- 21227 words of font info for 82 fonts, out of 8000000 for 9000
+ 1838 strings out of 495129
+ 23314 string characters out of 6182594
+ 322453 words of memory out of 5000000
+ 5148 multiletter control sequences out of 15000+600000
+ 19464 words of font info for 75 fonts, out of 8000000 for 9000
  80 hyphenation exceptions out of 8191
  27i,11n,33p,31666b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (21 pages, 41504 bytes).
+Output written on main.dvi (23 pages, 44844 bytes).

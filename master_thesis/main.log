@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  18 JAN 2016 15:58
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  18 JAN 2016 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -221,15 +221,17 @@ File: CR_space.eps Graphic file (type eps)
 File: database.eps Graphic file (type eps)
  <database.eps> [4]) (./cognitive.tex [5]
 Chapter 2.
+File: cognitive_cycle.eps Graphic file (type eps)
+<cognitive_cycle.eps>
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 8.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 16.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 8.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 16.
 ) (./database.tex [6
 
-]
+] [7]
 Chapter 3.
-) (./propose.tex [7
+) (./propose.tex [8
 
 ]
 Chapter 4.
@@ -239,17 +241,17 @@ Overfull \hbox (4.76202pt too wide) in paragraph at lines 7--7
 FF
  []
 
-) (./result.tex [8
+) (./result.tex [9
 
 ]
 Chapter 5.
-) (./conclude.tex [9
+) (./conclude.tex [10
 
 ]
 Chapter 6.
-) (./acknowledgement.tex [10
+) (./acknowledgement.tex [11
 
-]) (./reference.tex [11
+]) (./reference.tex [12
 
 ]
 Missing character: There is no ^^e2 in font cmr10!
@@ -264,11 +266,11 @@ LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
 (Font)              using `JY1/mc/m/n' instead on input line 6.
 
-) (./publication.tex [12
+) (./publication.tex [13
 
-]) (./appendix.tex [13
+]) (./appendix.tex [14
 
-]) [14
+]) [15
 
 ] (./main.aux)
 
@@ -276,12 +278,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 1844 strings out of 495129
- 23405 string characters out of 6182594
- 323405 words of memory out of 5000000
- 5154 multiletter control sequences out of 15000+600000
+ 1847 strings out of 495129
+ 23464 string characters out of 6182594
+ 323416 words of memory out of 5000000
+ 5156 multiletter control sequences out of 15000+600000
  21227 words of font info for 82 fonts, out of 8000000 for 9000
  80 hyphenation exceptions out of 8191
  27i,11n,33p,31666b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (20 pages, 41080 bytes).
+Output written on main.dvi (21 pages, 41504 bytes).

@@ -8,22 +8,22 @@
 \contentsline {subsection}{\numberline {2.2.1}Overlay Spectrum Sharing}{8}
 \contentsline {subsection}{\numberline {2.2.2}Underlay Spectrum Sharing}{8}
 \contentsline {section}{\numberline {2.3}Overview of Spectrum Sharing with Spectrum Database}{8}
-\contentsline {chapter}{\numberline {3}Spectrum Database}{9}
-\contentsline {section}{\numberline {3.1}Spectrum Sharing with Spectrum Database}{9}
-\contentsline {section}{\numberline {3.2}Measurement-based Spectrum Database}{9}
-\contentsline {subsection}{\numberline {3.2.1}Spectrum Datbase Construction based on Energy Detection}{9}
-\contentsline {section}{\numberline {3.3}Problem of Spectrum Database Construction }{9}
-\contentsline {chapter}{\numberline {4}Active Period Detection Method of Primary Signal for Spectrum Database}{10}
-\contentsline {section}{\numberline {4.1}System Model}{10}
-\contentsline {section}{\numberline {4.2}Transition Point Detection Method under Multiple ON/OFF Environment }{10}
-\contentsline {subsection}{\numberline {4.2.1}CUSUM}{10}
-\contentsline {subsection}{\numberline {4.2.2}GLR}{10}
-\contentsline {chapter}{\numberline {5}Simulation}{11}
-\contentsline {section}{\numberline {5.1}System Model}{11}
-\contentsline {section}{\numberline {5.2}Simulation Results}{11}
-\contentsline {chapter}{\numberline {6}Conclusion}{12}
-\contentsline {chapter}{Acknowledgement}{13}
-\contentsline {chapter}{References}{14}
-\contentsline {chapter}{Publications}{16}
-\contentsline {chapter}{Appendix}{17}
+\contentsline {chapter}{\numberline {3}Spectrum Database}{10}
+\contentsline {section}{\numberline {3.1}Spectrum Sharing with Spectrum Database}{10}
+\contentsline {section}{\numberline {3.2}Measurement-based Spectrum Database}{10}
+\contentsline {subsection}{\numberline {3.2.1}Spectrum Datbase Construction based on Energy Detection}{10}
+\contentsline {section}{\numberline {3.3}Problem of Spectrum Database Construction }{10}
+\contentsline {chapter}{\numberline {4}Active Period Detection Method of Primary Signal for Spectrum Database}{11}
+\contentsline {section}{\numberline {4.1}System Model}{11}
+\contentsline {section}{\numberline {4.2}Transition Point Detection Method under Multiple ON/OFF Environment }{11}
+\contentsline {subsection}{\numberline {4.2.1}CUSUM}{11}
+\contentsline {subsection}{\numberline {4.2.2}GLR}{11}
+\contentsline {chapter}{\numberline {5}Simulation}{12}
+\contentsline {section}{\numberline {5.1}System Model}{12}
+\contentsline {section}{\numberline {5.2}Simulation Results}{12}
+\contentsline {chapter}{\numberline {6}Conclusion}{13}
+\contentsline {chapter}{Acknowledgement}{14}
+\contentsline {chapter}{References}{15}
+\contentsline {chapter}{Publications}{17}
+\contentsline {chapter}{Appendix}{18}
 \contentsfinish 

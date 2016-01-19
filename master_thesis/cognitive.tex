@@ -20,8 +20,18 @@ The protection of Primary transmission is related to the observation and determi
 In this thesis, we focus on the observe and Orient process in the cognitive cycle for our proposed method.
 
 
+Cognitive Radio technology which is researched actively is roughly divided into two tpyes: Multi-mode System and Dynamic Spectrum Access. In Multi-mode System as illustrated in Fig. \ref{fig:hetero}, Secondary User is allowed to detect the temporally and spatially unused licensed band and utilize the spectrum with same behavior as Primary User. If the Quality of Service(QoS) is not able to be achieved from the certain spectrum band, Secondary User switches to another spectrum. While Multimode system is realized as a easier method than Dynamic Spectrum Access with the reason that the communication method has already been established, the spectrum usage efficiency is not remarkable due to the upper limitation on the communication scheme of Primary User.
+
+\begin{figure}[!htp]
+\begin{center}
+\includegraphics[width=100mm,clip]{multimode.eps}
+\caption{Multi-mode System.}
+\label{fig:hetero}
+\end{center}
+\end{figure}
+
 \section{Dynamic Spectrum Access for Spectrum Sharing}
-In the Dynamic Spectrum Access, Secondary Users are able to detect the spectrum and access to it with lower priority than Primary User of that spectrum. The method about how to access to the spectrum is composed of two types, which is defined as Overlay Spectrum Sharing \cite{ref:overlay}and Underlay Spectrum Sharing\cite{ref:underlay}.
+In the Dynamic Spectrum Access, Secondary Users are able to detect the spectrum and access to it with lower priority than Primary User of that spectrum. As a constraint, harmful interference toward Primary User is not allowed. The method about how to access to the spectrum is composed of two types, which is defined as Overlay Spectrum Sharing \cite{ref:overlay}and Underlay Spectrum Sharing\cite{ref:underlay}.
 
 \subsection{Overlay Spectrum Sharing}
 

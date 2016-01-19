@@ -8,9 +8,8 @@
 \contentsline {section}{\numberline {2.3}Dynamic Spectrum Access for Spectrum Sharing}{9}
 \contentsline {subsection}{\numberline {2.3.1}Overlay Spectrum Sharing}{9}
 \contentsline {subsection}{\numberline {2.3.2}Underlay Spectrum Sharing}{10}
-\contentsline {section}{\numberline {2.4}Overview of Spectrum Sharing with Spectrum Database}{10}
 \contentsline {chapter}{\numberline {3}Spectrum Database}{11}
-\contentsline {section}{\numberline {3.1}Spectrum Sharing with Spectrum Database}{11}
+\contentsline {section}{\numberline {3.1}Overview of Spectrum Sharing with Spectrum Database}{11}
 \contentsline {section}{\numberline {3.2}Measurement-based Spectrum Database}{11}
 \contentsline {subsection}{\numberline {3.2.1}Spectrum Datbase Construction based on Energy Detection}{11}
 \contentsline {section}{\numberline {3.3}Problem of Spectrum Database Construction }{11}

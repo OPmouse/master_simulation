@@ -4,26 +4,27 @@
 \contentsline {section}{\numberline {1.3}Purpose}{5}
 \contentsline {chapter}{\numberline {2}Cognitive Radio}{7}
 \contentsline {section}{\numberline {2.1}Overview of Cognitive Radio}{7}
-\contentsline {section}{\numberline {2.2}Dynamic Spectrum Access for Spectrum Sharing}{8}
-\contentsline {subsection}{\numberline {2.2.1}Overlay Spectrum Sharing}{8}
-\contentsline {subsection}{\numberline {2.2.2}Underlay Spectrum Sharing}{8}
-\contentsline {section}{\numberline {2.3}Overview of Spectrum Sharing with Spectrum Database}{8}
-\contentsline {chapter}{\numberline {3}Spectrum Database}{10}
-\contentsline {section}{\numberline {3.1}Spectrum Sharing with Spectrum Database}{10}
-\contentsline {section}{\numberline {3.2}Measurement-based Spectrum Database}{10}
-\contentsline {subsection}{\numberline {3.2.1}Spectrum Datbase Construction based on Energy Detection}{10}
-\contentsline {section}{\numberline {3.3}Problem of Spectrum Database Construction }{10}
-\contentsline {chapter}{\numberline {4}Active Period Detection Method of Primary Signal for Spectrum Database}{11}
-\contentsline {section}{\numberline {4.1}System Model}{11}
-\contentsline {section}{\numberline {4.2}Transition Point Detection Method under Multiple ON/OFF Environment }{11}
-\contentsline {subsection}{\numberline {4.2.1}CUSUM}{11}
-\contentsline {subsection}{\numberline {4.2.2}GLR}{11}
-\contentsline {chapter}{\numberline {5}Simulation}{12}
-\contentsline {section}{\numberline {5.1}System Model}{12}
-\contentsline {section}{\numberline {5.2}Simulation Results}{12}
-\contentsline {chapter}{\numberline {6}Conclusion}{13}
-\contentsline {chapter}{Acknowledgement}{14}
-\contentsline {chapter}{References}{15}
-\contentsline {chapter}{Publications}{17}
-\contentsline {chapter}{Appendix}{18}
+\contentsline {section}{\numberline {2.2}Multi-mode System}{8}
+\contentsline {section}{\numberline {2.3}Dynamic Spectrum Access for Spectrum Sharing}{9}
+\contentsline {subsection}{\numberline {2.3.1}Overlay Spectrum Sharing}{9}
+\contentsline {subsection}{\numberline {2.3.2}Underlay Spectrum Sharing}{10}
+\contentsline {section}{\numberline {2.4}Overview of Spectrum Sharing with Spectrum Database}{10}
+\contentsline {chapter}{\numberline {3}Spectrum Database}{11}
+\contentsline {section}{\numberline {3.1}Spectrum Sharing with Spectrum Database}{11}
+\contentsline {section}{\numberline {3.2}Measurement-based Spectrum Database}{11}
+\contentsline {subsection}{\numberline {3.2.1}Spectrum Datbase Construction based on Energy Detection}{11}
+\contentsline {section}{\numberline {3.3}Problem of Spectrum Database Construction }{11}
+\contentsline {chapter}{\numberline {4}Active Period Detection Method of Primary Signal for Spectrum Database}{12}
+\contentsline {section}{\numberline {4.1}System Model}{12}
+\contentsline {section}{\numberline {4.2}Transition Point Detection Method under Multiple ON/OFF Environment }{12}
+\contentsline {subsection}{\numberline {4.2.1}CUSUM}{12}
+\contentsline {subsection}{\numberline {4.2.2}GLR}{12}
+\contentsline {chapter}{\numberline {5}Simulation}{13}
+\contentsline {section}{\numberline {5.1}System Model}{13}
+\contentsline {section}{\numberline {5.2}Simulation Results}{13}
+\contentsline {chapter}{\numberline {6}Conclusion}{14}
+\contentsline {chapter}{Acknowledgement}{15}
+\contentsline {chapter}{References}{16}
+\contentsline {chapter}{Publications}{18}
+\contentsline {chapter}{Appendix}{19}
 \contentsfinish 

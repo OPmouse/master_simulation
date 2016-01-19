@@ -1,4 +1,4 @@
-tttttt\chapter[Cognitive Radio]{Cognitive Radio}
+\chapter[Cognitive Radio]{Cognitive Radio}
 %\addcontentsline{toc}{chapter}{Chapter 1\\Introduction}
 \label{chapter:CR}
 In Chapter \ref{chapter:CR}, cognitive radio technology for spectrum sharing is described in detail. Also, as one of the applied technology, spectrum sharing with spectrum database is discussed.
@@ -19,7 +19,7 @@ The protection of Primary transmission is related to the observation and determi
 
 In this thesis, we focus on the observe and Orient process in the cognitive cycle for our proposed method.
 
-
+\section{Multi-mode System}
 Cognitive Radio technology which is researched actively is roughly divided into two tpyes: Multi-mode System and Dynamic Spectrum Access. In Multi-mode System as illustrated in Fig. \ref{fig:hetero}, Secondary User is allowed to detect the temporally and spatially unused licensed band and utilize the spectrum with same behavior as Primary User. If the Quality of Service(QoS) is not able to be achieved from the certain spectrum band, Secondary User switches to another spectrum. While Multimode system is realized as a easier method than Dynamic Spectrum Access with the reason that the communication method has already been established, the spectrum usage efficiency is not remarkable due to the upper limitation on the communication scheme of Primary User.
 
 \begin{figure}[!htp]
@@ -31,10 +31,11 @@ Cognitive Radio technology which is researched actively is roughly divided into 
 \end{figure}
 
 \section{Dynamic Spectrum Access for Spectrum Sharing}
-In the Dynamic Spectrum Access, Secondary Users are able to detect the spectrum and access to it with lower priority than Primary User of that spectrum. As a constraint, harmful interference toward Primary User is not allowed. The method about how to access to the spectrum is composed of two types, which is defined as Overlay Spectrum Sharing \cite{ref:overlay}and Underlay Spectrum Sharing\cite{ref:underlay}.
+As Dynamic Spectrum Access is possible for more flexible spectrum utilization, huge spectrum usage efficency improvement In the Dynamic Spectrum Access, Secondary Users are able to detect the spectrum and access to it with lower priority than Primary User of that spectrum. As a constraint, harmful interference toward Primary User is not allowed. The method about how to access to the spectrum is composed of two types, which is defined as Overlay Spectrum Sharing\cite{ref:overlay} and Underlay Spectrum Sharing\cite{ref:underlay}.
 
 \subsection{Overlay Spectrum Sharing}
-
+As illustrated in Fig.\ref{fig:overlay}, Unused White Space is utilized for communication in Overlay Spectrum Sharing. If the existence of Primary User in this spectrum is accurately detected by Secondary User, the protection of Primary User will be possible and the opportunity for Secondary User can be gained. In other words, the detection method on Primary User is  the way to achieve Overlay Spectrum Sharing.
+    
 \begin{figure}[!htp]
 \begin{center}
 \includegraphics[width=100mm,clip]{overlay.eps}
@@ -44,7 +45,7 @@ In the Dynamic Spectrum Access, Secondary Users are able to detect the spectrum 
 \end{figure}
 
 \subsection{Underlay Spectrum Sharing}
-
+ Difference with Overlay Spectrum Sharing, licenced band for Primary User is considered as In other words, Both Primary User protection and own performance with using appropriate communication method should be ensured.
 \begin{figure}[!htp]
 \begin{center}
 \includegraphics[width=100mm,clip]{underlay.eps}

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  19 JAN 2016 21:15
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  19 JAN 2016 22:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -250,21 +250,21 @@ Overfull \hbox (17.61905pt too wide) in paragraph at lines 4--5
 m database and the measurement-
  []
 
-) (./propose.tex [11
+[11
 
-]
+]) (./propose.tex [12]
 Chapter 4.
-) (./result.tex [12
+) (./result.tex [13
 
 ]
 Chapter 5.
-) (./conclude.tex [13
+) (./conclude.tex [14
 
 ]
 Chapter 6.
-) (./acknowledgement.tex [14
+) (./acknowledgement.tex [15
 
-]) (./reference.tex [15
+]) (./reference.tex [16
 
 ]
 Missing character: There is no ^^e2 in font cmr12!
@@ -282,14 +282,14 @@ LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
 (Font)              using `JY1/mc/m/n' instead on input line 6.
 
-[16
+[17
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
 []\OT1/cmr/m/n/12 Microsoft, ``Mi-crosoft Re-ser-ach White Space Finder''
  []
 
-) (./publication.tex [17]
+) (./publication.tex [18]
 Overfull \hbox (4.6817pt too wide) in paragraph at lines 7--8
 []$[]$\OT1/cmr/m/n/12 , Takeo Fu-jii, "Tran-si-tion de-tec-tion with Spec-trum 
 Database us-ing Weighted
@@ -301,9 +301,9 @@ Overfull \hbox (12.88998pt too wide) in paragraph at lines 10--11
 n-der Mul-ti-ple ON/OFF
  []
 
-) (./appendix.tex [18
+) (./appendix.tex [19
 
-]) [19
+]) [20
 
 ] (./main.aux)
 
@@ -319,4 +319,4 @@ Here is how much of TeX's memory you used:
  80 hyphenation exceptions out of 8191
  27i,11n,33p,31666b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (25 pages, 50532 bytes).
+Output written on main.dvi (26 pages, 52432 bytes).

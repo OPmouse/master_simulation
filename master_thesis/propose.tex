@@ -39,7 +39,7 @@ In this section, transition point detection algorithm for the status of primary 
   \end{figure}
 \end{center} 
 \subsection{CUSUM algorithm}
-The cumulative sum (CUSUM) algorithm, which was first proposed by Page in \cite{CUSUM}, is used to detection the transition point when $P$ and $\sigma^2$ is assumed to be known.
+The cumulative sum (CUSUM) algorithm, which was first proposed by Page in \cite{ref:CUSUM}, is used to detection the transition point when $P$ and $\sigma^2$ is assumed to be known.
 The PDF $f_0(t)$ and $f_1(t)$ are fully specified. Thus, the log probability density ratio $l(y[i])$ is also fully defined by the eq. (\ref{like1}) and (\ref{like2}),
 
 \begin{align}
@@ -98,7 +98,7 @@ $\left\{.\right\}^{+}$means that the value must be postive. Hence, $g_t$ can be 
 \end{enumerate}
 
 \subsection{GLR algorithm}
-In realistic wireless channels, the exact value of $P$ is difficult to be known exactly. It is more reasonable to assume that $P$ belongs to a range, that is $P \in [P_{min}, P_{max}]$. In this case, a generalized likelihood ratio(GLR) algorithm\cite{GLR} for transition point detection is applied. Since the value of $P$ is unknown, the statistic $g_t$ is defined as the following eq. (\ref{Glr}),
+In realistic wireless channels, the exact value of $P$ is difficult to be known exactly. It is more reasonable to assume that $P$ belongs to a range, that is $P \in [P_{min}, P_{max}]$. In this case, a generalized likelihood ratio(GLR) algorithm\cite{ref:GLR} for transition point detection is applied. Since the value of $P$ is unknown, the statistic $g_t$ is defined as the following eq. (\ref{Glr}),
 \begin{eqnarray}
 g_t = \max_{k \leq t}\left\{ \sum_{i=k+1}^tl(y[i])\right\}={\rm ln}\left\{\prod_{i=k+1}^k\frac{f_{1,P}(y[i])}{f_0(y[i])}\right\} \nonumber \\ 
    = \max_{k \leq t}\left\{\sum_{i=k+1}^t\left\{ \frac{Py^2[i]}{2(P+\sigma^2)\sigma^2}+\frac{1}{2} {\rm ln}(\frac{\sigma^2}{P+\sigma^2}) \right\}\right\},

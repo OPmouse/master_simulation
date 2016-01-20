@@ -14,7 +14,9 @@ For further improving the performance for spectrum sharing, Federal Communicatio
 \end{figure}
 
 \section{Measurement-based Spectrum Database}
-To obtain a large improvement on spectrum usage efficiency, underlay spectrum sharing spectrum database should be considered instead of overlay type. Thus, a more advanced radio environment database besides FCC-defined spectrum database is required for providing not only the White Space information, but also the information about Primary, such as Modulation and Coding Scheme(MCS) and transmision power, a more detailed propagation model, estimation error and the position of Primary receiver and so on.
+To obtain a large improvement on spectrum usage efficiency, underlay spectrum sharing spectrum database should be considered instead of overlay type. Thus, a more advanced radio environment database besides FCC-defined spectrum database is required for providing not only the White Space information, but also the information about Primary, such as Modulation and Coding Scheme(MCS) and transmision power, a more detailed propagation model, estimation error and the position of Primary receiver and so on. As the Spectrum Database is contructed based on the observation on primary signal, high-speed communication is possible to be realized  with adaptively determining the transmission power for avoiding interference towards Primary User based on the information obtained from the underlay spectrum sharing database.
+
+The difference between FCC-defined Spectrum Database and measurement-based Spectrum Database is described as follows and Fig. \ref{fig:fcc-defined_sdb} and \ref{fig:asdb}. In FCC-defined Spectrum Database as illustrated in Fig.\ref{fig:fcc-defined_sdb}, a service area is determined in advance, and the margin level is calculated for protecting Primary User receivers in this service area. Then, the transmission power and service area for Secondary User is limited for avoiding interference towards Primary User. Thus, only low power communication and limited service area is suitable for spectrum sharing. On the other hand, As Measurement-based Spectrum Database is possible to provide all information about Primary User,whiche leads to a more detailed service area, received power from Primary User at each position is known to Secondary User. Therefore, a highly accurate design of transmission power and timing can be realized. As a result, spectrum sharing  performance with Primary User and opportunity for Secondary will be improved and the Quality of Service(Qos) for Secondary User will be enhanced. 
 
 \begin{figure}[!htp]
 \begin{center}
@@ -24,9 +26,9 @@ To obtain a large improvement on spectrum usage efficiency, underlay spectrum sh
 \end{center}
 \end{figure}
 
+\section{Spectrum Datbase Construction based on Energy Detection}
+In this section, the measurement-based spectrum database considered in this research is described in detail. Fig. \ref{fig:fujii_sdb} shows the overview of how to construct the spectrum database. First, the spectrum database stores the radio environment information measured from Secondary User with mobility, such as vehicles and celluar phone. Secondary User receives the signal from Primary User when Secondary User moves without transmitting any signals. After that, Energy Detection(ED)\cite{ref:ED}, a simple and easy to implement spectrum sensing method, is adopted as a measurement method for uploading to the spectrum database.  
 
-
-    \subsection{Spectrum Datbase Construction based on Energy Detection}
 
 \section{Problem of Spectrum Database Construction }
 

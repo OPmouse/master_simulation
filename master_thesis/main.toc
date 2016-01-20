@@ -11,19 +11,19 @@
 \contentsline {chapter}{\numberline {3}Spectrum Database}{11}
 \contentsline {section}{\numberline {3.1}Overview of Spectrum Sharing with Spectrum Database}{11}
 \contentsline {section}{\numberline {3.2}Measurement-based Spectrum Database}{12}
-\contentsline {subsection}{\numberline {3.2.1}Spectrum Datbase Construction based on Energy Detection}{12}
-\contentsline {section}{\numberline {3.3}Problem of Spectrum Database Construction }{12}
-\contentsline {chapter}{\numberline {4}Active Period Detection Method of Primary Signal for Spectrum Database}{13}
-\contentsline {section}{\numberline {4.1}System Model}{13}
-\contentsline {section}{\numberline {4.2}Transition Point Detection Method under Multiple ON/OFF Environment }{13}
-\contentsline {subsection}{\numberline {4.2.1}CUSUM}{13}
-\contentsline {subsection}{\numberline {4.2.2}GLR}{13}
-\contentsline {chapter}{\numberline {5}Simulation}{14}
-\contentsline {section}{\numberline {5.1}System Model}{14}
-\contentsline {section}{\numberline {5.2}Simulation Results}{14}
-\contentsline {chapter}{\numberline {6}Conclusion}{15}
-\contentsline {chapter}{Acknowledgement}{16}
-\contentsline {chapter}{References}{17}
-\contentsline {chapter}{Publications}{19}
-\contentsline {chapter}{Appendix}{20}
+\contentsline {section}{\numberline {3.3}Spectrum Datbase Construction based on Energy Detection}{13}
+\contentsline {section}{\numberline {3.4}Problem of Spectrum Database Construction }{13}
+\contentsline {chapter}{\numberline {4}Active Period Detection Method of Primary Signal for Spectrum Database}{14}
+\contentsline {section}{\numberline {4.1}System Model}{14}
+\contentsline {section}{\numberline {4.2}Transition Point Detection Method under Multiple ON/OFF Environment }{14}
+\contentsline {subsection}{\numberline {4.2.1}CUSUM}{14}
+\contentsline {subsection}{\numberline {4.2.2}GLR}{14}
+\contentsline {chapter}{\numberline {5}Simulation}{15}
+\contentsline {section}{\numberline {5.1}System Model}{15}
+\contentsline {section}{\numberline {5.2}Simulation Results}{15}
+\contentsline {chapter}{\numberline {6}Conclusion}{16}
+\contentsline {chapter}{Acknowledgement}{17}
+\contentsline {chapter}{References}{18}
+\contentsline {chapter}{Publications}{20}
+\contentsline {chapter}{Appendix}{21}
 \contentsfinish 

@@ -27,8 +27,13 @@ The difference between FCC-defined Spectrum Database and measurement-based Spect
 \end{figure}
 
 \section{Spectrum Datbase Construction based on Energy Detection}
-In this section, the measurement-based spectrum database considered in this research is described in detail. Fig. \ref{fig:fujii_sdb} shows the overview of how to construct the spectrum database. First, the spectrum database stores the radio environment information measured from Secondary User with mobility, such as vehicles and celluar phone. Secondary User receives the signal from Primary User when Secondary User moves without transmitting any signals. After that, Energy Detection(ED)\cite{ref:ED}, a simple and easy to implement spectrum sensing method, is adopted as a measurement method for uploading to the spectrum database.  
+In this section, the measurement-based spectrum database considered in this research is described in detail. Fig. \ref{fig:fujii_sdb} shows the overview of how to construct the spectrum database. First, the spectrum database stores the radio environment information measured from Secondary User with mobility, such as vehicles and celluar phone. Secondary User receives the signal from Primary User when Secondary User moves without transmitting any signals. After that, Energy Detection(ED)\cite{ref:ED}, a simple and easy to implement spectrum sensing method, is adopted as a measurement method for uploading to the spectrum database. Energy Detection is considered as instantaneous primary signal sampling process during a sensing period $T$, and then $N$ samples is obtained with determining a sampling frequency $F$. As a example, we assume that a series of samples $\left\{x_1,x_2,...,x_N\right\}$are obtained by using energy detection, and then the received power $P$ can be calculated as the following equation
 
+\begin{eqnarray}
+P=\frac{1}{N}\sum_{i=1}^{N}(x_i)^2,
+\end{eqnarray}
 
+which is only the calculation of the average power of obtained samples.
+After Secondaray User finishes observation, the collect measurement will be uploaded to the spectrum database with its own position. Then, a statistical process of estimating the radio environment characterics of Primary User is executed to generate a radio environment map. However, Secondary User, as the source for spectrum database construction, requires highly accurate spectrum sensing performance. If measurment data including error may register to the database, the reliability of spectrum database may degrade. Therefore, the problem of spectrum database construction is explained in the next section.
 \section{Problem of Spectrum Database Construction }
 

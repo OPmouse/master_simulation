@@ -12,18 +12,18 @@
 \contentsline {section}{\numberline {3.1}Overview of Spectrum Sharing with Spectrum Database}{11}
 \contentsline {section}{\numberline {3.2}Measurement-based Spectrum Database}{12}
 \contentsline {section}{\numberline {3.3}Spectrum Datbase Construction based on Energy Detection}{13}
-\contentsline {section}{\numberline {3.4}Problem of Spectrum Database Construction }{13}
-\contentsline {chapter}{\numberline {4}Active Period Detection Method of Primary Signal for Spectrum Database}{14}
-\contentsline {section}{\numberline {4.1}System Model}{14}
-\contentsline {section}{\numberline {4.2}Transition Point Detection Method under Multiple ON/OFF Environment }{14}
-\contentsline {subsection}{\numberline {4.2.1}CUSUM}{14}
-\contentsline {subsection}{\numberline {4.2.2}GLR}{14}
-\contentsline {chapter}{\numberline {5}Simulation}{15}
-\contentsline {section}{\numberline {5.1}System Model}{15}
-\contentsline {section}{\numberline {5.2}Simulation Results}{15}
-\contentsline {chapter}{\numberline {6}Conclusion}{16}
-\contentsline {chapter}{Acknowledgement}{17}
-\contentsline {chapter}{References}{18}
-\contentsline {chapter}{Publications}{20}
-\contentsline {chapter}{Appendix}{21}
+\contentsline {section}{\numberline {3.4}Problem of Spectrum Database Construction }{14}
+\contentsline {chapter}{\numberline {4}Active Period Detection Method of Primary Signal for Spectrum Database}{15}
+\contentsline {section}{\numberline {4.1}System Model}{15}
+\contentsline {section}{\numberline {4.2}Transition Point Detection Method under Multiple ON/OFF Environment }{15}
+\contentsline {subsection}{\numberline {4.2.1}CUSUM}{15}
+\contentsline {subsection}{\numberline {4.2.2}GLR}{15}
+\contentsline {chapter}{\numberline {5}Simulation}{16}
+\contentsline {section}{\numberline {5.1}System Model}{16}
+\contentsline {section}{\numberline {5.2}Simulation Results}{16}
+\contentsline {chapter}{\numberline {6}Conclusion}{17}
+\contentsline {chapter}{Acknowledgement}{18}
+\contentsline {chapter}{References}{19}
+\contentsline {chapter}{Publications}{21}
+\contentsline {chapter}{Appendix}{22}
 \contentsfinish 

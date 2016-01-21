@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  20 JAN 2016 21:27
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  21 JAN 2016 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -260,12 +260,9 @@ measurement-based Spec-
  []
 
 File: asdb.eps Graphic file (type eps)
-<asdb.eps>
-
-LaTeX Warning: Reference `fig:fujii_sdb' on page 12 undefined on input line 30.
-
-
-[12] [13]) (./propose.tex [14]
+<asdb.eps> [12] [13]
+File: fujii_sdb.eps Graphic file (type eps)
+ <fujii_sdb.eps>) (./propose.tex [14]
 Chapter 4.
 
 LaTeX Font Warning: Command \boldmath invalid in math mode on input line 7.
@@ -343,17 +340,14 @@ n-der Mul-ti-ple ON/OFF
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 1990 strings out of 495129
- 25125 string characters out of 6182594
- 326561 words of memory out of 5000000
- 5284 multiletter control sequences out of 15000+600000
+ 1992 strings out of 495129
+ 25151 string characters out of 6182594
+ 326572 words of memory out of 5000000
+ 5285 multiletter control sequences out of 15000+600000
  20085 words of font info for 77 fonts, out of 8000000 for 9000
  80 hyphenation exceptions out of 8191
  27i,15n,33p,31666b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (35 pages, 81240 bytes).
+Output written on main.dvi (35 pages, 81516 bytes).

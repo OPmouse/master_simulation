@@ -1,15 +1,15 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  21 JAN 2016 18:56
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2016.1.12)  22 JAN 2016 02:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **cover.tex
 (./cover.tex
-pLaTeX2e <2006/11/10> (based on LaTeX2e <2011/06/27> patch level 0)
-Babel <3.9h> and hyphenation patterns for 11 languages loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk11.clo
-File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+pLaTeX2e <2006/11/10> (based on LaTeX2e <2015/10/01> patch level 2)
+Babel <3.9n> and hyphenation patterns for 79 languages loaded.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count81
 \c@chapter=\count82
@@ -50,17 +50,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <17.28> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 35.
- [1
 
-]
-(./cover.aux) ) 
+[1
+
+] (./cover.aux) ) 
 Here is how much of TeX's memory you used:
- 244 strings out of 495129
- 2610 string characters out of 6182594
- 53676 words of memory out of 5000000
- 3673 multiletter control sequences out of 15000+600000
+ 244 strings out of 493742
+ 2630 string characters out of 6151252
+ 58211 words of memory out of 5000000
+ 3854 multiletter control sequences out of 15000+600000
  12108 words of font info for 48 fonts, out of 8000000 for 9000
- 80 hyphenation exceptions out of 8191
- 22i,7n,19p,215b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 929 hyphenation exceptions out of 8191
+ 22i,7n,19p,190b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on cover.dvi (1 page, 924 bytes).

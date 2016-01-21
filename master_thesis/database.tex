@@ -45,4 +45,12 @@ After Secondaray User finishes observation, the collect measurement will be uplo
 \end{figure}
 
 \section{Problem of Spectrum Database Construction }
-As explained in the previous section, measurement-based spectrum database with spectrum sharing is constructed with considering received power value reported from Secondray Users at different position. However, because all received samples during the sensing period is utilized to calculate the received power value, the reported value may include noise component if a communication status transition of Primary User occurs during the sensing period.
+As explained in the previous section, measurement-based spectrum database with spectrum sharing is constructed with considering received power value reported from Secondray Users at different position. However, since all received samples during the sensing period is utilized to calculate the received power value, the reported value may include noise component if a communication status transition of Primary User occurs during the sensing period. If the data with low accuracy are reported to the spectrum database, the reliability of the database degrades significantly. The problem discussed below will not cause any effect while the communication status of Primary User is always ON, such as Digital Television broadcasting system, while communication sysytems using Time Division Duplex(TDD) method or packet communication, such as Wireless LAN(WLAN) and celluar communication, may cause huge effect on the database. As illustrated in Fig \ref{fig:transition}, when the communication status is always ON during the sensing period, a correct received power can be reported to the database. On the other hand, when a transition from ON to OFF(which means that primary finishes transmission during the sensing period) occurs, samples including noise component are used to calculate the received power and are reported to the database. Because a noise including value is the correct received power we desire to obtain, the accurate propagation model is difficult to be estimated. Hence, from the viewpoint of the spectrum database construction, it is not appropiate to utilize all samples to calculate the received power and a transition point method to detect active period of primary user should be taken into account. In next chapter, a active period detection method is discussed for improving accuracy of spectrum database.
+
+\begin{figure}[!htp]
+\begin{center}
+\includegraphics[width=120mm,clip]{transition.eps}
+\caption{Problem of Measurement-based Spectrum Database Construction.}
+\label{fig:transition}
+\end{center}
+\end{figure}

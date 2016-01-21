@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  20 JAN 2016 21:09
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  21 JAN 2016 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -260,24 +260,41 @@ measurement-based Spec-
  []
 
 File: asdb.eps Graphic file (type eps)
-<asdb.eps>
-
-LaTeX Warning: Reference `fig:fujii_sdb' on page 12 undefined on input line 30.
-
-
-[12] [13]) (./propose.tex [14]
+<asdb.eps> [12] [13]
+File: fujii_sdb.eps Graphic file (type eps)
+ <fujii_sdb.eps>) (./propose.tex [14]
 Chapter 4.
-) (./result.tex [15
+
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 7.
+
+
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 7.
+
+[15
 
 ]
+File: systemodel.eps Graphic file (type eps)
+ <systemodel.eps> [16]
+File: OFF2ON.eps Graphic file (type eps)
+ <OFF2ON.eps> [17]
+File: ON2OFF.eps Graphic file (type eps)
+ <ON2OFF.eps> [18]) (./result.tex
+[19]
 Chapter 5.
-) (./conclude.tex [16
+[20
 
 ]
+File: transition_up.eps Graphic file (type eps)
+ <transition_up.eps>
+File: transition_down.eps Graphic file (type eps)
+ <transition_down.eps> [21] [22]
+File: powdiff.eps Graphic file (type eps)
+ <powdiff.eps>)
+(./conclude.tex [23]
 Chapter 6.
-) (./acknowledgement.tex [17
+) (./acknowledgement.tex [24
 
-]) (./reference.tex [18
+]) (./reference.tex [25
 
 ]
 Missing character: There is no ^^e2 in font cmr12!
@@ -295,7 +312,7 @@ LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
 (Font)              using `JY1/mc/m/n' instead on input line 6.
 
-[19
+[26
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
@@ -303,7 +320,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 //whitespaces.
  []
 
-) (./publication.tex [20]
+) (./publication.tex [27]
 Overfull \hbox (4.6817pt too wide) in paragraph at lines 7--8
 []$[]$\OT1/cmr/m/n/12 , Takeo Fu-jii, "Tran-si-tion de-tec-tion with Spec-trum 
 Database us-ing Weighted
@@ -315,25 +332,22 @@ Overfull \hbox (12.88998pt too wide) in paragraph at lines 10--11
 n-der Mul-ti-ple ON/OFF
  []
 
-) (./appendix.tex [21
+) (./appendix.tex [28
 
-]) [22
+]) [29
 
 ] (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 1954 strings out of 495129
- 24764 string characters out of 6182594
- 324339 words of memory out of 5000000
- 5256 multiletter control sequences out of 15000+600000
- 19464 words of font info for 75 fonts, out of 8000000 for 9000
+ 1992 strings out of 495129
+ 25151 string characters out of 6182594
+ 326572 words of memory out of 5000000
+ 5285 multiletter control sequences out of 15000+600000
+ 20085 words of font info for 77 fonts, out of 8000000 for 9000
  80 hyphenation exceptions out of 8191
- 27i,11n,33p,31666b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,15n,33p,31666b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (28 pages, 58092 bytes).
+Output written on main.dvi (35 pages, 81516 bytes).

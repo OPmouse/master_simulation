@@ -14,16 +14,16 @@
 \contentsline {section}{\numberline {3.3}Spectrum Datbase Construction based on Energy Detection}{13}
 \contentsline {section}{\numberline {3.4}Problem of Spectrum Database Construction }{14}
 \contentsline {chapter}{\numberline {4}Active Period Detection Method of Primary Signal for Spectrum Database}{15}
-\contentsline {section}{\numberline {4.1}System Model}{15}
-\contentsline {section}{\numberline {4.2}Transition Point Detection Method under Multiple ON/OFF Environment }{15}
-\contentsline {subsection}{\numberline {4.2.1}CUSUM}{15}
-\contentsline {subsection}{\numberline {4.2.2}GLR}{15}
-\contentsline {chapter}{\numberline {5}Simulation}{16}
-\contentsline {section}{\numberline {5.1}System Model}{16}
-\contentsline {section}{\numberline {5.2}Simulation Results}{16}
-\contentsline {chapter}{\numberline {6}Conclusion}{17}
-\contentsline {chapter}{Acknowledgement}{18}
-\contentsline {chapter}{References}{19}
-\contentsline {chapter}{Publications}{21}
-\contentsline {chapter}{Appendix}{22}
+\contentsline {section}{\numberline {4.1}System model}{15}
+\contentsline {section}{\numberline {4.2}Transition Point Detection Method under Multiple ON/OFF Environment }{16}
+\contentsline {subsection}{\numberline {4.2.1}CUSUM algorithm}{16}
+\contentsline {subsection}{\numberline {4.2.2}GLR algorithm}{18}
+\contentsline {chapter}{\numberline {5}Simulation}{20}
+\contentsline {section}{\numberline {5.1}Received Power detection}{20}
+\contentsline {section}{\numberline {5.2}Simulation results and performance evulation}{22}
+\contentsline {chapter}{\numberline {6}Conclusion}{24}
+\contentsline {chapter}{Acknowledgement}{25}
+\contentsline {chapter}{References}{26}
+\contentsline {chapter}{Publications}{28}
+\contentsline {chapter}{Appendix}{29}
 \contentsfinish 

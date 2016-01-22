@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  22 JAN 2016 15:45
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  22 JAN 2016 18:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -313,11 +313,8 @@ File: systemodel.eps Graphic file (type eps)
 File: OFF2ON.eps Graphic file (type eps)
  <OFF2ON.eps> [18]
 File: ON2OFF.eps Graphic file (type eps)
- <ON2OFF.eps> [19]
-
-LaTeX Warning: Reference `maxP' on page 20 undefined on input line 139.
-
-[20]) (./result.tex [21]
+ <ON2OFF.eps> [19] [20])
+(./result.tex [21]
 Chapter 5.
 [22
 
@@ -350,10 +347,16 @@ LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
 (Font)              using `JY1/mc/m/n' instead on input line 6.
 
+
+Overfull \hbox (30.09114pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/n/12 Chart.'' http://www.tele.soumu.go.jp/resource/search/myuse/usec
+ondition/wagakuni.pdf,
+ []
+
 [28
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
 []\OT1/cmr/m/n/12 Microsoft, ``Mi-crosoft Re-ser-ach White Space Finder'' http:
 //whitespaces.
  []
@@ -378,17 +381,14 @@ n-der Mul-ti-ple ON/OFF
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 2535 strings out of 495129
- 34480 string characters out of 6182594
- 337238 words of memory out of 5000000
- 5817 multiletter control sequences out of 15000+600000
+ 2534 strings out of 495129
+ 34464 string characters out of 6182594
+ 337247 words of memory out of 5000000
+ 5816 multiletter control sequences out of 15000+600000
  20085 words of font info for 77 fonts, out of 8000000 for 9000
  80 hyphenation exceptions out of 8191
- 27i,13n,33p,31666b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,16n,33p,31666b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (37 pages, 88372 bytes).
+Output written on main.dvi (37 pages, 88164 bytes).

@@ -18,12 +18,13 @@
 \contentsline {section}{\numberline {4.2}Transition Point Detection Method under Multiple ON/OFF Environment }{17}
 \contentsline {subsection}{\numberline {4.2.1}CUSUM algorithm}{17}
 \contentsline {subsection}{\numberline {4.2.2}GLR algorithm}{19}
-\contentsline {chapter}{\numberline {5}Simulation}{21}
-\contentsline {section}{\numberline {5.1}Received Power detection}{21}
+\contentsline {subsection}{\numberline {4.2.3}Threshold configuration for CUSUM and GLR algorithm}{21}
+\contentsline {chapter}{\numberline {5}Simulation}{22}
+\contentsline {section}{\numberline {5.1}Received Power detection}{22}
 \contentsline {section}{\numberline {5.2}Simulation results and performance evulation}{23}
-\contentsline {chapter}{\numberline {6}Conclusion}{25}
-\contentsline {chapter}{Acknowledgement}{26}
-\contentsline {chapter}{References}{27}
-\contentsline {chapter}{Publications}{29}
-\contentsline {chapter}{Appendix}{30}
+\contentsline {chapter}{\numberline {6}Conclusion}{26}
+\contentsline {chapter}{Acknowledgement}{27}
+\contentsline {chapter}{References}{28}
+\contentsline {chapter}{Publications}{30}
+\contentsline {chapter}{Appendix}{31}
 \contentsfinish 

@@ -3,12 +3,12 @@
 //for test
 #define BIT 100000
 
-#define SAMPLE         20480
+#define SAMPLE         2048
 #define iteration      10000/*観測回数*/
 #define trial 10
 #define Tx_Power       10  /*PUの送信電力10dBm*/
-#define MIN_DIST       150  /*[m]*/
-#define MAX_DIST       150 /*[m]*/
+#define MIN_DIST       50  /*[m]*/
+#define MAX_DIST       50 /*[m]*/
 #define AVERAGE_ON  100000.0      //average on time  = 100[ms]
 #define AVERAGE_OFF 400000.0      //average off time = 100[ms]
 #define Ts 5

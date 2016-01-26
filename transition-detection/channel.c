@@ -55,24 +55,33 @@ double shadowing(int *idum) {
 }
 
 /*channel function including Pathloss,AWGN and Fading*/
-void channel(double *Rx_P,int dist,int MODE,int *idum) {
+void channel(double *Rx_P,int dist,int transition_OFF2ON,int MODE,int *idum) {
   double dB2real(double dBm);
   double ran1(int *idum);
   int i;
 
   //only AWGN
   if(MODE == AWGN) {
-    for(i=0;i<SAMPLE;i++) {
+    for(i=0;i<transition_OFF2ON;i++) {
       Rx_P[i] = dB2real(Tx_Power + pathloss((double)dist))+awgn_power(idum);
-      printf("%d,%lf\n",i,10*log10(Rx_P[i]));
-    }//for
+      //printf("%d,%lf\n",i,10*log10(Rx_P[i]));
+    }
+    for(i=transition_OFF2ON;i<SAMPLE;i++) {
+      Rx_P[i] = awgn_power(idum);
+      //printf("%d,%lf\n",i,10*log10(Rx_P[i]));
+    }
+    
   }//if
   
   //only Fading
   if(MODE == FADING) {
-    for(i=0;i<SAMPLE;i++) {
+    for(i=0;i<transition_OFF2ON;i++) {
       Rx_P[i] = dB2real(Tx_Power + pathloss((double)dist) + fading_dB(idum));
-    }//for
+    }
+    for(i=transition_OFF2ON;i<SAMPLE;i++) {
+      Rx_P[i] = awgn_power(idum);
+    }
+    
   }//if
 
   //AWGN+Fading

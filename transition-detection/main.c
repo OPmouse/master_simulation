@@ -17,7 +17,7 @@ char TRAFFIC[204800000];
 void print_array(double *data,int num) {
   int i;
   for(i=0;i<num;i++) {
-    printf("%lf\n",10*log10(data[i]));
+    printf("%d,%lf\n",i,10*log10(data[i]));
   }
 }
 
@@ -31,7 +31,7 @@ int main() {
     double poidev(double ave,int *idum);
     double fading_dB(int *idum);/*fading function*/
     double shadowing(int *idum);/*log-normal shadowing function*/
-    void channel(double *,int,int,int*);
+    void channel(double *,int,int,int,int*);
 
     int count_ON(int *,int );
     int count_OFF2OFF(int *,int );
@@ -67,6 +67,7 @@ int main() {
     int bool=0;
     double gamma,myu;
     int FFTPOINT;
+    int transition_ON2OFF;
     int iter;
     double ave_upload=0.0,ave_upload_transition=0.0;
     double var_upload=0.0,var_upload_transition=0.0;
@@ -85,6 +86,7 @@ int main() {
     r=ran1(&p);
 
     FFTPOINT=2048;
+    transition_ON2OFF = 1024;
 
     myu = 1.0/(double)AVERAGE_ON;
     gamma = 1.0/(double)AVERAGE_OFF;
@@ -94,7 +96,8 @@ int main() {
     for (L=MIN_DIST;L<=MAX_DIST;L=L+10) {
       //channel(Statistic,L,AWGN,&p);
       //channel(Statistic,L,FADING,&p);
-      channel(Statistic,L,AWGN_FADING,&p);
+      channel(Statistic,L,transition_ON2OFF,FADING,&p);
+
       print_array(Statistic,SAMPLE);
       //printf("Distance: %d [m],Rx_Power=%lf \n",L,Rx_Power);
     }

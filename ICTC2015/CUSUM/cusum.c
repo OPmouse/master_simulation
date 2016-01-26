@@ -280,11 +280,15 @@ int main(int argc,char *argv[]) {
   double Power = 0.0;
   double Power_transition_cusum = 0.0;//,Power_transition_glr=0.0;
   double Power_2 = 0.0;
-  double Power_transition_2_cusum =0.0;//,Power_transition_2_glr =0.0;
+  double Power_transition_2_cusum = 0.0;//,Power_transition_2_glr =0.0;
   double Var;
   double Var_transition_cusum;//,Var_transition_glr;
   double diff = 0.0;
-  double diff_transition_cusum=0.0;//,diff_transition_glr=0.0;
+  double diff_transition_cusum = 0.0;//,diff_transition_glr=0.0;
+  int count_transition_ON2OFF = 0;
+  int count_transition_OFF2ON = 0;
+  double transition_ON2OFF_p[SNR_STEP];//rise down point detection probability
+  double transition_OFF2ON_p[SNR_STEP];//rise up point detection probability
   double ave_diff;
   double ave_diff_transition_cusum;//,ave_diff_transition_glr;
   //g[0]=0.0;
@@ -358,7 +362,15 @@ int main(int argc,char *argv[]) {
       if (find_id(g_cusum_ON2OFF, SecondMax(g_cusum_ON2OFF, FFTPOINT), FFTPOINT)>Transition_point_ON2OFF_cusum[sn] || find_id(g_cusum_ON2OFF, max(g_cusum_ON2OFF, FFTPOINT), FFTPOINT)>Transition_point_ON2OFF_cusum[sn]) {
 	Transition_point_OFF2ON_cusum[sn] = find_id(g_cusum_ON2OFF, max(g_cusum_ON2OFF, Transition_point_ON2OFF_cusum[sn]), Transition_point_ON2OFF_cusum[sn]);
       }
-      //printf("CUSUM: OFF2ON:%d  ON2OFF:%d\n",Transition_point_OFF2ON_cusum[sn],Transition_point_ON2OFF_cusum[sn]);
+      // show transition point result.
+      //printf("sn \t %d \t OFF2ON \t %d \t ON2OFF \t %d\n",sn,Transition_point_OFF2ON_cusum[sn],Transition_point_ON2OFF_cusum[sn]);
+      
+      //count detected transition point number
+      if (Transition_point_OFF2ON_cusum[sn] == transition_point1) count_transition_OFF2ON++;
+
+      if (Transition_point_ON2OFF_cusum[sn] == transition_point2) count_transition_ON2OFF++;
+
+    
       if (Transition_point_OFF2ON_cusum[sn]<Transition_point_ON2OFF_cusum[sn]) {
 	//fprintf(stdout,"%lf,%d,%d\n",SNRdB[sn],Transition_point_OFF2ON_cusum[sn],Transition_point_ON2OFF_cusum[sn]);
 	for (i=0; i<FFTPOINT; i++) {
@@ -396,13 +408,21 @@ int main(int argc,char *argv[]) {
       Power = 0.0;Power_2 = 0.0;
       Power_transition_cusum = 0.0;Power_transition_2_cusum = 0.0;
     }
+    //transition detection probability
+    transition_ON2OFF_p[sn] = (double)count_transition_ON2OFF/(double)iteration; 
+    transition_OFF2ON_p[sn] = (double)count_transition_OFF2ON/(double)iteration;
+
+    //average power difference calculation
     ave_diff = 10*log10(diff/(double)iteration);
     //CUSUM
     ave_diff_transition_cusum =10*log10(diff_transition_cusum/(double)iteration);
-    fprintf(stdout,"%lf\t%lf\t%lf\n",SNRdB[sn],ave_diff,ave_diff_transition_cusum);
-    
+    //fprintf(stdout,"%lf\t%lf\t%lf\n",SNRdB[sn],ave_diff,ave_diff_transition_cusum);
+    fprintf(stdout,"%lf\t%lf\t%lf\n",SNRdB[sn],transition_ON2OFF_p[sn],transition_OFF2ON_p[sn]);
+
     diff=0.0;
     diff_transition_cusum=0.0;
+    count_transition_OFF2ON = 0;
+    count_transition_ON2OFF = 0;
   }
   return 0;
 }

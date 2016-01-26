@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  22 JAN 2016 18:39
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  26 JAN 2016 21:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -305,31 +305,45 @@ LaTeX Font Warning: Command \boldmath invalid in math mode on input line 7.
 
 LaTeX Font Warning: Command \mathversion invalid in math mode on input line 7.
 
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 10.
+
 [16
 
 ]
 File: systemodel.eps Graphic file (type eps)
  <systemodel.eps> [17]
 File: OFF2ON.eps Graphic file (type eps)
- <OFF2ON.eps> [18]
+ <OFF2ON.eps> [18] [19]
 File: ON2OFF.eps Graphic file (type eps)
- <ON2OFF.eps> [19] [20])
-(./result.tex [21]
-Chapter 5.
-[22
+ <ON2OFF.eps> [20]
+File: peak_OFF2ON.eps Graphic file (type eps)
 
-]
+<peak_OFF2ON.eps>
+File: peak_ON2OFF.eps Graphic file (type eps)
+ <peak_ON2OFF.eps> [21]) (./result.tex [22]
+Chapter 5.
+[23
+
+] [24]
 File: transition_up.eps Graphic file (type eps)
  <transition_up.eps>
 File: transition_down.eps Graphic file (type eps)
- <transition_down.eps> [23]
+ <transition_down.eps>
 File: powdiff.eps Graphic file (type eps)
- <powdiff.eps>)
-(./conclude.tex [24] [25]
-Chapter 6.
-) (./acknowledgement.tex [26
+ <powdiff.eps>
+File: cdf_OFF2ON.eps Graphic file (type eps)
 
-]) (./reference.tex [27
+<cdf_OFF2ON.eps>
+File: cdf_ON2OFF.eps Graphic file (type eps)
+ <cdf_ON2OFF.eps>
+File: per.eps Graphic file (type eps)
+ <per.eps>) (./conclude.tex [25] [26] [27]
+[28] [29]
+Chapter 6.
+) (./acknowledgement.tex [30
+
+]) (./reference.tex [31
 
 ]
 Missing character: There is no ^^e2 in font cmr12!
@@ -353,7 +367,7 @@ Overfull \hbox (30.09114pt too wide) in paragraph at lines 7--8
 ondition/wagakuni.pdf,
  []
 
-[28
+[32
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 16--17
@@ -361,7 +375,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 //whitespaces.
  []
 
-) (./publication.tex [29]
+) (./publication.tex [33]
 Overfull \hbox (4.6817pt too wide) in paragraph at lines 7--8
 []$[]$\OT1/cmr/m/n/12 , Takeo Fu-jii, "Tran-si-tion de-tec-tion with Spec-trum 
 Database us-ing Weighted
@@ -373,9 +387,9 @@ Overfull \hbox (12.88998pt too wide) in paragraph at lines 10--11
 n-der Mul-ti-ple ON/OFF
  []
 
-) (./appendix.tex [30
+) (./appendix.tex [34
 
-]) [31
+]) [35
 
 ] (./main.aux)
 
@@ -383,12 +397,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 2534 strings out of 495129
- 34464 string characters out of 6182594
- 337247 words of memory out of 5000000
- 5816 multiletter control sequences out of 15000+600000
- 20085 words of font info for 77 fonts, out of 8000000 for 9000
+ 2554 strings out of 495129
+ 34703 string characters out of 6182594
+ 337306 words of memory out of 5000000
+ 5829 multiletter control sequences out of 15000+600000
+ 20930 words of font info for 80 fonts, out of 8000000 for 9000
  80 hyphenation exceptions out of 8191
  27i,16n,33p,31666b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (37 pages, 88164 bytes).
+Output written on main.dvi (41 pages, 90416 bytes).

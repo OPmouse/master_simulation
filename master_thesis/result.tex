@@ -24,7 +24,7 @@ Based on the detected rise up and rise down point, an active period of the prima
   \begin{tabular}{c|c}
     & \\
     Parameter &Value \\ \hline
-    SNR & 0〜20[dB] \\
+    SNR & -10〜20[dB] \\
     $[P_{{\rm min}},P_{{\rm max}}]$ & [$P$/2, 2$P$] \\
     $\sigma^2$ & 1 \\
     sample number & 2048 \\
@@ -48,17 +48,17 @@ To vertify the performance of the received power, we evalate
 \end{enumerate}
 Figures \ref{transition_up} and \ref{transition_down} show the boxplot results of detected rise up point and rise down point respectively. The body of the boxplot consists of a box, which goes from the fisrt quartile to the third quartile. The line drawn at the box means the median of the detected transition point. The lines extended from the box called whiskers mean the smallest and the largest nonoutlier from the box. The real rise up point and rise down piont are fix on the 512th sample and 1532th sample. From the simulation results, we can see that in low SNR region the variation of transition point is large, howerver, in high SNR region the detected transition point converges to the real one.
 
+\newpage
+
 \begin{figure}[t]
 \centering
-\includegraphics[width=87mm]{transition_up.eps}
+\includegraphics[width=120mm]{transition_up.eps}
 \caption{Boxplot result of the rise up point.}
 \label{transition_up}
 \end{figure}
-
-
 \begin{figure}[t]
 \centering
-\includegraphics[width=87mm]{transition_down.eps}
+\includegraphics[width=120mm]{transition_down.eps}
 \caption{Boxplot result of the rise down point.}
 \label{transition_down}
 \end{figure}
@@ -74,7 +74,30 @@ The simulation result shows that the proposed method for the received power dete
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=77mm]{powdiff.eps}
+\includegraphics[width=120mm]{powdiff.eps}
 \caption{The power difference with the real power.}
 \label{Powdiff}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=120mm]{cdf_OFF2ON.eps}
+\caption{CDF of rise up point detection(rise up point is set to be 500th sample).}
+\label{cdf_off2on}
+\end{figure}
+
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=120mm]{cdf_ON2OFF.eps}
+\caption{CDF of rise down point detection(risen down point is set to be 1500th sample).}
+\label{cdf_on2off}
+\end{figure}
+
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=120mm]{per.eps}
+\caption{The power difference with the real power at different ON percentage during the sensing period.}
+\label{per}
 \end{figure}

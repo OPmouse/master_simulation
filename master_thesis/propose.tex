@@ -7,6 +7,7 @@
 We assume that a sensor node tunes to a frequency band and obtains samples ${\bf y}=\left\{y[1],y[2],...,y[N]\right\}$ from a primary transmitter. $N$ is the sample number during the sensing period. Since a multiple ON/OFF environment is considered, the sensing samples ${\boldmath y}$ is shown in Fig. 2 as follows
 
 \begin{eqnarray}
+{\large
 y[i] = 
 \begin{cases}
 \;n[i],    i=1,...\tau_1-1 \\ \nonumber
@@ -15,6 +16,7 @@ y[i] =
 \; \\ \nonumber
 \;n[i],    i=\tau_2,..,N,
 \end{cases}
+}
 \end{eqnarray}
 
 where $\tau_1$ and $\tau_2$ is the rise up point at which primary user starts to transmit and rise down point at which primary user stop transmitting respectively. If $\tau_1=1$ and $\tau_2=N$, the primary user is always transmitting during the sensing period. On the other hand, if $\tau_1=1$ and $\tau_2=1$, the primary user is not at present during the sensing period. In this paper, we consider only the primary user starts and stops transmission during the sensing period.
@@ -36,7 +38,7 @@ In this section, transition point detection algorithm for the status of primary 
 \begin{center}
   \begin{figure}[t]
     \centering
-    \includegraphics[width=90mm]{systemodel.eps}
+    \includegraphics[width=120mm]{systemodel.eps}
     \label{system_model}
     \caption{\normalsize{System model.}}
   \end{figure}
@@ -80,7 +82,7 @@ with a threshold $h$. If $g_t$ is larger than $h$, the existence of the primary 
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=87mm]{OFF2ON.eps}
+\includegraphics[width=120mm]{OFF2ON.eps}
 \caption{ Statistic $g_t$ using the probability density ratio $l_0(y)$  when the rise up point is 512th sample and the rise down point is 1532th sample.}
 \label{OFF2ON}
 \end{figure}
@@ -110,7 +112,7 @@ g_t &=& \max_{k \leq t}\left\{ \sum_{i=k+1}^tl(y[i])\right\}={\rm ln}\left\{\pro
 \end{eqnarray}
 \begin{figure}[t]
 \centering
-\includegraphics[width=87mm]{ON2OFF.eps}
+\includegraphics[width=120mm]{ON2OFF.eps}
 \caption{Statistic $g_t$ using the probability density ratio $l_1(y)$ when the raise up point is 512th sample and the raise down point is 1532th sample.}
 \label{ON2OFF}
 \end{figure}
@@ -133,7 +135,29 @@ P^{*}=
 \end{cases}
 \end{align}
 
+
 As same as the CUSUM algorithm, in the GLR algorithm the statistic value $g_t$ is calculated in eq.(\ref{Glr}) with choosing the a power $P^{*}$ from the eq.(\ref{maxP}), and is compared with the threshold $h$. Once $g_t>h$, the existance of the primary user is declared.
+
+
+\begin{center}
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=120mm]{peak_OFF2ON.eps}
+    \label{peak_OFF2ON}
+    \caption{Peak detection image for rise up point.}
+  \end{figure}
+\end{center} 
+
+
+\begin{center}
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=120mm]{peak_ON2OFF.eps}
+    \label{peak_ON2OFF}
+    \caption{Peak detection image for rise down point.}
+  \end{figure}
+\end{center} 
+
 
 \subsection{Threshold configuration for CUSUM and GLR algorithm}
 To set a threshold for the transition point detection, we first assume $t_0$ denotes the time when the statistic $g_t$ exceeds the threshold $h$, and define $\bar{T_0}=E[t_0]$ is the mean time to a false alarm. Following \cite{ref:threshold_cusum} and \cite{ref:threshold_GLR}, some simple bounds on $\bar{T_0}$ can be derived.
@@ -150,3 +174,4 @@ and $a$ follows the following inequality.
 \begin{eqnarray}
 \bar{T_0} \geq \frac{1}{a}.
 \end{eqnarray}
+

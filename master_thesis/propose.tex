@@ -6,14 +6,16 @@
 
 We assume that a sensor node tunes to a frequency band and obtains samples ${\bf y}=\left\{y[1],y[2],...,y[N]\right\}$ from a primary transmitter. $N$ is the sample number during the sensing period. Since a multiple ON/OFF environment is considered, the sensing samples ${\boldmath y}$ is shown in Fig. 2 as follows
 
-\begin{align}
+\begin{eqnarray}
 y[i] = 
 \begin{cases}
 \;n[i],    i=1,...\tau_1-1 \\ \nonumber
+\; \\ \nonumber
 \;x[i]+n[i], i=\tau_1,...,\tau_2-1 \\
+\; \\ \nonumber
 \;n[i],    i=\tau_2,..,N,
 \end{cases}
-\end{align}
+\end{eqnarray}
 
 where $\tau_1$ and $\tau_2$ is the rise up point at which primary user starts to transmit and rise down point at which primary user stop transmitting respectively. If $\tau_1=1$ and $\tau_2=N$, the primary user is always transmitting during the sensing period. On the other hand, if $\tau_1=1$ and $\tau_2=1$, the primary user is not at present during the sensing period. In this paper, we consider only the primary user starts and stops transmission during the sensing period.
 If the primary user is not transmitting, $y[i] = n[i]$, in which $n[i]$ is Addative White Gaussian Noise with mean 0 and variance $\sigma^2$. If the primary user starts transmitting, then $y[i] = x[i] + n[i]$, in which $x[i] = gs[i]$. $g$ is the channel gain and the $s[i]$ is the signal of the primary user. Therefore, we assume $x[i]$ is white and Gaussian with mean 0 and variance $P$. $P$ depends on the channel gain and the transmitter power of the primary user. In the wireless environment, the signal of the primary experiences pathloss and shadowing and  multipath fading, so the value of $P$ is not possible to be known accurately by the sensor. Thus, as a solution to received power detection problem, a transition point detection algorithm is considered. 
@@ -22,13 +24,14 @@ If the primary user is not transmitting, $y[i] = n[i]$, in which $n[i]$ is Addat
 
 In this section, transition point detection algorithm for the status of primary user is introduced in detail. As the Fig. \ref{system_model} is shown, the sample of the ON and OFF status follows a Gaussian distribution $\mathcal{N}(0,\sigma^2+P)$ and $\mathcal{N}(0,\sigma^2)$ respectively. The probability density function(PDF) follows the eq. (\ref{normal}) is given by
 
-\begin{align}
+\begin{eqnarray}
 \begin{cases}
 \;f_0(t) = \frac{1}{\sqrt{2\pi\sigma^2}} \rm{exp}^{-\frac{t^2}{2\sigma^2}} \\
+\; \\ \nonumber
 \;f_1(t) = \frac{1}{\sqrt{2\pi(\sigma^2+P)}} \rm{exp}^{-\frac{t^2}{2(\sigma^2+P)}}.
 \end{cases}
 \label{normal}
-\end{align}
+\end{eqnarray}
 
 \begin{center}
   \begin{figure}[t]
@@ -38,19 +41,20 @@ In this section, transition point detection algorithm for the status of primary 
     \caption{\normalsize{System model.}}
   \end{figure}
 \end{center} 
+
 \subsection{CUSUM algorithm}
 The cumulative sum (CUSUM) algorithm, which was first proposed by Page in \cite{ref:CUSUM}, is used to detection the transition point when $P$ and $\sigma^2$ is assumed to be known.
 The PDF $f_0(t)$ and $f_1(t)$ are fully specified. Thus, the log probability density ratio $l(y[i])$ is also fully defined by the eq. (\ref{like1}) and (\ref{like2}),
 
-\begin{align}
-l_{0}(y[i]) &= {\rm ln}\left\{\frac{f_0(y[i])}{f_1(y[i])}\right\} \label{like1} \\ 
-&=-\frac{2(P+\sigma^2)\sigma^2}{Py^2[i]} + \frac{1}{2}{\rm ln}\left\{\frac{P+\sigma^2}{\sigma^2}\right\}, \nonumber
-\end{align}
+\begin{eqnarray}
+l_{0}(y[i]) &=& {\rm ln}\left\{\frac{f_0(y[i])}{f_1(y[i])}\right\} \label{like1} \\ 
+&=& -\frac{2(P+\sigma^2)\sigma^2}{Py^2[i]} + \frac{1}{2}{\rm ln}\left\{\frac{P+\sigma^2}{\sigma^2}\right\}, \nonumber
+\end{eqnarray}
 
-\begin{align}
-l_{1}(y[i]) &= {\rm ln}\left\{\frac{f_1(y[i])}{f_0(y[i])}\right\} \label{like2} \\ 
-&=\frac{Py^2[i]}{2(P+\sigma^2)\sigma^2} + \frac{1}{2}{\rm ln}\left\{\frac{\sigma^2}{P+\sigma^2}\right\}. \nonumber
-\end{align}
+\begin{eqnarray}
+l_{1}(y[i]) &=& {\rm ln}\left\{\frac{f_1(y[i])}{f_0(y[i])}\right\} \label{like2} \\ 
+&=& \frac{Py^2[i]}{2(P+\sigma^2)\sigma^2} + \frac{1}{2}{\rm ln}\left\{\frac{\sigma^2}{P+\sigma^2}\right\}. \nonumber
+\end{eqnarray}
 
 When the primary user is on the OFF and ON status, the average log probability density ratio can be calculated respectively using the eq. (\ref{D_f0}) and (\ref{D_f1}),
 \begin{eqnarray}
@@ -82,13 +86,13 @@ with a threshold $h$. If $g_t$ is larger than $h$, the existence of the primary 
 \end{figure}
 
 Also, the eq. (\ref{Cusum}) can be written as
-\begin{align}
-g_{t+1} &= \max_{k \leq t+1}\left\{\sum_{i=k+1}^{t+1}l(y[i])\right\} \nonumber \\ 
-&= \max\left\{\max_{k \leq t+1}\left\{\sum_{i=k+1}^{t+1}l(y[i])\right\},0\right\} \nonumber \\
-&= \max\left\{\max_{k \leq t+1}\left\{\sum_{i=k+1}^{t+1}l(y[i])\right\}+l(y[i]),0\right\} \nonumber \\
-&= \left\{g_t+l(y[t+1])\right\}^{+}.
+\begin{eqnarray}
+g_{t+1} &=& \max_{k \leq t+1}\left\{\sum_{i=k+1}^{t+1}l(y[i])\right\} \nonumber \\ 
+&=& \max\left\{\max_{k \leq t+1}\left\{\sum_{i=k+1}^{t+1}l(y[i])\right\},0\right\} \nonumber \\
+&=& \max\left\{\max_{k \leq t+1}\left\{\sum_{i=k+1}^{t+1}l(y[i])\right\}+l(y[i]),0\right\} \nonumber \\
+&=& \left\{g_t+l(y[t+1])\right\}^{+}.
 \label{rec}
-\end{align}
+\end{eqnarray}
 $\left\{.\right\}^{+}$means that the value must be postive. Hence, $g_t$ can be computed recursively by setting $g_0=0$. To sum up, the CUSUM algorithm works as the following process:
 \begin{enumerate}
   \item[i]. compute $l(y)$ for each sample using eq. (\ref{like1}) or (\ref{like2}).
@@ -98,10 +102,10 @@ $\left\{.\right\}^{+}$means that the value must be postive. Hence, $g_t$ can be 
 \end{enumerate}
 
 \subsection{GLR algorithm}
-In realistic wireless channels, the exact value of $P$ is difficult to be known exactly. It is more reasonable to assume that $P$ belongs to a range, that is $P \in [P_{min}, P_{max}]$. In this case, a generalized likelihood ratio(GLR) algorithm\cite{ref:GLR} for transition point detection is applied. Since the value of $P$ is unknown, the statistic $g_t$ is defined as the following eq. (\ref{Glr}),
+In realistic wireless channels, the exact value of $P$ is difficult to be known exactly. It is more reasonable to assume that $P$ belongs to a range, that is $P\in[P_{{\rm min}}, P_{\rm {max}}]$. In this case, a generalized likelihood ratio(GLR) algorithm\cite{ref:GLR} for transition point detection is applied. Since the value of $P$ is unknown, the statistic $g_t$ is defined as the following eq. (\ref{Glr}),
 \begin{eqnarray}
-g_t = \max_{k \leq t}\left\{ \sum_{i=k+1}^tl(y[i])\right\}={\rm ln}\left\{\prod_{i=k+1}^k\frac{f_{1,P}(y[i])}{f_0(y[i])}\right\} \nonumber \\ 
-   = \max_{k \leq t}\left\{\sum_{i=k+1}^t\left\{ \frac{Py^2[i]}{2(P+\sigma^2)\sigma^2}+\frac{1}{2} {\rm ln}(\frac{\sigma^2}{P+\sigma^2}) \right\}\right\},
+g_t &=& \max_{k \leq t}\left\{ \sum_{i=k+1}^tl(y[i])\right\}={\rm ln}\left\{\prod_{i=k+1}^k\frac{f_{1,P}(y[i])}{f_0(y[i])}\right\} \nonumber \\ 
+   &=& \max_{k \leq t}\left\{\sum_{i=k+1}^t\left\{ \frac{Py^2[i]}{2(P+\sigma^2)\sigma^2}+\frac{1}{2} {\rm ln}(\frac{\sigma^2}{P+\sigma^2}) \right\}\right\},
 \label{Glr}
 \end{eqnarray}
 \begin{figure}[t]
@@ -112,25 +116,37 @@ g_t = \max_{k \leq t}\left\{ \sum_{i=k+1}^tl(y[i])\right\}={\rm ln}\left\{\prod_
 \end{figure}
 where $f_{1,P}(t)$ is the probability density function of the received signal when the varinace of the signal part is $P$. Therefore a function $f(P)$ defined as eq. (\ref{fp}) is used to calculate the statistic $g_t$,
 \begin{eqnarray}
-f(P) = \sum_{i=k+1}^t\left\{ \frac{Py^2[i]}{2(P+\sigma^2)\sigma^2}+\frac{1}{2} {\rm ln}(\frac{\sigma^2}{P+\sigma^2})\right\} \nonumber\\ 
-=\frac{P}{2(P+\sigma^2)\sigma^2}\hat{y}+(t-k)\frac{1}{2}{\rm ln}\left\{ \frac{\sigma^2}{P+\sigma^2} \right\},
+f(P) &=& \sum_{i=k+1}^t\left\{ \frac{Py^2[i]}{2(P+\sigma^2)\sigma^2}+\frac{1}{2} {\rm ln}(\frac{\sigma^2}{P+\sigma^2})\right\} \nonumber\\ 
+&=&\frac{P}{2(P+\sigma^2)\sigma^2}\hat{y}+(t-k)\frac{1}{2}{\rm ln}\left\{ \frac{\sigma^2}{P+\sigma^2} \right\},
 \label{fp}
 \end{eqnarray}
-where $\hat{y}=\sum_{i=k+1}^t y[i]$. To find a the power $P^{*}$ that maximizes the function $f(P)$ over $P \in [P_{min}, P_{max}]$, it can be calculated as below,
+where $\hat{y}=\sum_{i=k+1}^t y[i]$. To find a the power $P^{*}$ that maximizes the function $f(P)$ over $P \in [P_{{\rm min}}, P_{{\rm max}}]$, it can be calculated as below,
 
-\begin{equation}
+\begin{align}
 P^{*}=
-\left\{
-\begin{array}{ll}
-P_{{\rm max}}, & (t-k)\leq\frac{\hat{y}}{P_{{\rm max}}+\sigma^2}, \\
-\frac{\hat{y}}{t-k}-\sigma^2, & \frac{\hat{y}}{P_{{\rm max}}+\sigma^2}\leq(t-k)\leq\frac{\hat{y}}{P_{{\rm min}}+\sigma^2}, \\
-P_{{\rm min}}, & (t-k) \geq \frac{\hat{y}}{P_{{\rm min}}+\sigma^2}.
-\end{array}
-\right.
-\label{maxP}
-\end{equation}
+\begin{cases}
+\;P_{{\rm max}}, & (t-k)\leq\frac{\hat{y}}{P_{{\rm max}}+\sigma^2}, \\
+\; \\ 
+\;\frac{\hat{y}}{t-k}-\sigma^2, & \frac{\hat{y}}{P_{{\rm max}}+\sigma^2}\leq(t-k)\leq\frac{\hat{y}}{P_{{\rm min}}+\sigma^2}, \label{maxP} \\ 
+\; \\
+\; P_{{\rm min}}, & (t-k) \geq \frac{\hat{y}}{P_{{\rm min}}+\sigma^2}.
+\end{cases}
+\end{align}
 
-As same as the CUSUM algorithm, in the GLR algorithm the statistic value $g_t$ is calculated in eq. (\ref{Glr}) with choosing the a power $P^{*}$ from the equation (\ref{maxP}), and is compared with the threshold $h$. Once $g_t>h$, the existance of the primary user is declared.
+As same as the CUSUM algorithm, in the GLR algorithm the statistic value $g_t$ is calculated in eq.(\ref{Glr}) with choosing the a power $P^{*}$ from the eq.(\ref{maxP}), and is compared with the threshold $h$. Once $g_t>h$, the existance of the primary user is declared.
 
-    
+\subsection{Threshold configuration for CUSUM and GLR algorithm}
+To set a threshold for the transition point detection, we first assume $t_0$ denotes the time when the statistic $g_t$ exceeds the threshold $h$, and define $\bar{T_0}=E[t_0]$ is the mean time to a false alarm. Following \cite{ref:threshold_cusum} and \cite{ref:threshold_GLR}, some simple bounds on $\bar{T_0}$ can be derived.
 
+For CUSUM algorithm, the relationship between the mean false alarm and threshold is as follows.
+\begin{eqnarray}
+\bar{T_0} \geq e^h.
+\end{eqnarray}
+For GLR algorithm, the threshold is set to be $h=-{\rm ln}\left\{\frac{a}{b}\right\}$ , where 
+\begin{eqnarray}
+b=3{\rm ln}\left\{a^{-1}(1+\frac{1}{D(f_1,P_{min}||f_0)})^2\right\},
+\end{eqnarray}
+and $a$ follows the following inequality.
+\begin{eqnarray}
+\bar{T_0} \geq \frac{1}{a}.
+\end{eqnarray}

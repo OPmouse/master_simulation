@@ -28,7 +28,7 @@
 #define MIN_SNR  20
 #define iteration 10000
 #define T0 10
-#define MODE 1
+#define MODE 0
 #define MODE_NORM 1
 #define MODE_EXP 0
 
@@ -114,7 +114,8 @@ void _loglikelihood_OFF2ON(double *l,double *data,double P,int mode){
     }
     //case 2 : exponential distribution
     if(mode==MODE_EXP){
-      l[i] = 0.5*log(2*M_PI*sigma_2*sigma_2*P*P)-P*data[i]+data[i]*data[i]/(2*sigma_2*sigma_2);
+      l[i] = log(P/sqrt(2*M_PI*sigma_2*sigma_2))+(2*sigma_2*data[i]-P*data[i]*data[i])/(2*sigma_2*P);
+      //l[i] = 0.5*log(2*M_PI*sigma_2*sigma_2*P*P)-P*data[i]+data[i]*data[i]/(2*sigma_2*sigma_2);
     }
   }
 }
@@ -131,7 +132,8 @@ void _loglikelihood_ON2OFF(double *l,double *data,double P,int mode){
   //case 2 : exponential distribution
   if(mode==MODE_EXP){
     for (i=0; i<FFTPOINT; i++) {
-      l[i] = -0.5*log(2*M_PI*sigma_2*P*P)+P*data[i]-data[i]*data[i]/(2*sigma_2);
+      l[i] = log(sqrt(2*M_PI*sigma_2*sigma_2)/P)+(P*data[i]*data[i]-2*sigma_2*data[i])/(2*sigma_2*P);
+      //l[i] = -0.5*log(2*M_PI*sigma_2*P*P)+P*data[i]-data[i]*data[i]/(2*sigma_2);
     }
   }
 }
@@ -143,6 +145,24 @@ double _MAX(double x,double y){
     return y;
   }
 }
+
+double _MIN(double x,double y){
+  if(x<y){
+    return x;
+  }else{
+    return y;
+  }  
+}
+
+void _CUSUM_fading(double *g,double *l){
+  unsigned int i;
+  g[0] = 0.0;
+  for (i=1; i<FFTPOINT; i++) {
+    g[i]=_MIN(g[i-1]+l[i], 0.0);
+    //printf("g[%d]=%lf\n",i,g[i]);
+  }
+}
+
 //CUSUM algorithm
 void _CUSUM(double *g,double *l){
   unsigned int i;
@@ -249,6 +269,33 @@ int transition_point_detection_ON2OFF(int *sample,int len,int transition_point_O
     return candidate;
 }
 
+
+int transition_point_detection_OFF2ON_fading(int *sample,int len){
+  unsigned int i;
+  int candidate = 0;
+  //int len1,len2;
+  for (i=0; i<len-1; i++) {
+    if(sample[i]== 0 && sample[i+1]==1) {
+      candidate = (int)i;
+    }
+  }
+  return candidate;
+}
+
+
+int transition_point_detection_ON2OFF_fading(int *sample,int len,int transition_point_OFF2ON){
+    unsigned int i;
+    int candidate = 0;
+    for (i=0; i<len-1; i++) {
+      if(sample[i]==0 && sample[i+1]==1){
+	if(i>transition_point_OFF2ON){
+	  candidate = (int) i;
+	}
+      }
+    }
+    return candidate;
+}
+
 //Kullback-Leibler divergance calculation D(f1||f0)
 double _D(double P){
   return P/(2.0*(P+sigma_2))+0.5*log(sigma_2/(P+sigma_2));
@@ -280,15 +327,11 @@ int main(int argc,char *argv[]) {
   double Power = 0.0;
   double Power_transition_cusum = 0.0;//,Power_transition_glr=0.0;
   double Power_2 = 0.0;
-  double Power_transition_2_cusum = 0.0;//,Power_transition_2_glr =0.0;
+  double Power_transition_2_cusum =0.0;//,Power_transition_2_glr =0.0;
   double Var;
   double Var_transition_cusum;//,Var_transition_glr;
   double diff = 0.0;
-  double diff_transition_cusum = 0.0;//,diff_transition_glr=0.0;
-  int count_transition_ON2OFF = 0;
-  int count_transition_OFF2ON = 0;
-  double transition_ON2OFF_p[SNR_STEP];//rise down point detection probability
-  double transition_OFF2ON_p[SNR_STEP];//rise up point detection probability
+  double diff_transition_cusum=0.0;//,diff_transition_glr=0.0;
   double ave_diff;
   double ave_diff_transition_cusum;//,ave_diff_transition_glr;
   //g[0]=0.0;
@@ -329,7 +372,7 @@ int main(int argc,char *argv[]) {
 	_DataGeneration(y, sigma_2+P[sn], transition_point1, transition_point2, &p,MODE_NORM);
       }
       if(MODE==MODE_EXP){
-	_DataGeneration(y, P[sn], transition_point1, transition_point2, &p,MODE_EXP);
+	_DataGeneration(y, 1.0/(double)P[sn], transition_point1, transition_point2, &p,MODE_EXP);
       }
       //N(0,sigma_2) range:[transition_point2,FFTPOINT]
       _DataGeneration(y, sigma_2, transition_point2, FFTPOINT, &p,MODE_NORM);
@@ -340,45 +383,60 @@ int main(int argc,char *argv[]) {
       
       //decision value calculation for quickest detection
       _CUSUM(g_cusum_OFF2ON, l_OFF2ON);
+      //_CUSUM_fading(g_cusum_OFF2ON, l_OFF2ON);
       _CUSUM(g_cusum_ON2OFF, l_ON2OFF);
       
       for (i=0; i<FFTPOINT; i++) {
-	//printf("g_ON2OFF\t%d\t%lf\tg_OFF2ON\t%d\t%lf\n",i,g_cusum_ON2OFF[i],i,g_cusum_OFF2ON[i]);
+	//printf("g_ON2OFF\t%d\t%lf\tg_OFF2ON\t%d\t%lf\tl_OFF2ON\t%lf\n",i,g_cusum_ON2OFF[i],i,g_cusum_OFF2ON[i],l_OFF2ON[i]);
       }
       
       //decision for detecting OFF->ON
-      //_decision(Decision_cusum_OFF2ON, g_cusum_OFF2ON,threshold_cusum);
+      _decision(Decision_cusum_OFF2ON, g_cusum_OFF2ON,threshold_cusum);
       
       //decision for detecting ON->OFF
-      //_decision(Decision_cusum_ON2OFF, g_cusum_ON2OFF, threshold_cusum);
+      _decision(Decision_cusum_ON2OFF, g_cusum_ON2OFF, threshold_cusum);
       
       //transition point detection ON->OFF
+      //Transition_point_OFF2ON_cusum[sn] = transition_point_detection_OFF2ON(Decision_cusum_OFF2ON, FFTPOINT);
+      
       //Transition_point_ON2OFF_cusum[sn] = transition_point_detection_ON2OFF(Decision_cusum_ON2OFF, FFTPOINT, Transition_point_OFF2ON_cusum[sn]);
-      Transition_point_ON2OFF_cusum[sn] = find_id(g_cusum_OFF2ON, max(g_cusum_OFF2ON, FFTPOINT), FFTPOINT);
+      Transition_point_OFF2ON_cusum[sn] = transition_point_detection_OFF2ON_fading(Decision_cusum_ON2OFF, FFTPOINT);
+      
+      Transition_point_ON2OFF_cusum[sn] = transition_point_detection_ON2OFF_fading(Decision_cusum_OFF2ON, FFTPOINT, Transition_point_OFF2ON_cusum[sn]);
+
+      
+      //printf("CUSUM: OFF2ON:%d  ON2OFF:%d\n",Transition_point_OFF2ON_cusum[sn],Transition_point_ON2OFF_cusum[sn]);
+      //printf("%d\t%d\t%d\n",sn,Transition_point_OFF2ON_cusum[sn],Transition_point_ON2OFF_cusum[sn]);
+      
+      //Transition_point_ON2OFF_cusum[sn] = find_id(g_cusum_OFF2ON, max(g_cusum_OFF2ON, FFTPOINT), FFTPOINT);
       
       //transition point detection OFF->ON
       //Transition_point_OFF2ON_cusum[sn] = transition_point_detection_OFF2ON(Decision_cusum_OFF2ON, FFTPOINT);
       //fprintf(stdout,"max id: %d, second max id:%d\n",find_id(g_cusum_ON2OFF, max(g_cusum_ON2OFF, FFTPOINT), FFTPOINT),find_id(g_cusum_ON2OFF, SecondMax(g_cusum_ON2OFF, FFTPOINT), FFTPOINT));
+
       if (find_id(g_cusum_ON2OFF, SecondMax(g_cusum_ON2OFF, FFTPOINT), FFTPOINT)>Transition_point_ON2OFF_cusum[sn] || find_id(g_cusum_ON2OFF, max(g_cusum_ON2OFF, FFTPOINT), FFTPOINT)>Transition_point_ON2OFF_cusum[sn]) {
-	Transition_point_OFF2ON_cusum[sn] = find_id(g_cusum_ON2OFF, max(g_cusum_ON2OFF, Transition_point_ON2OFF_cusum[sn]), Transition_point_ON2OFF_cusum[sn]);
+	//Transition_point_OFF2ON_cusum[sn] = find_id(g_cusum_ON2OFF, max(g_cusum_ON2OFF, Transition_point_ON2OFF_cusum[sn]), Transition_point_ON2OFF_cusum[sn]);
       }
-      // show transition point result.
-      //printf("sn \t %d \t OFF2ON \t %d \t ON2OFF \t %d\n",sn,Transition_point_OFF2ON_cusum[sn],Transition_point_ON2OFF_cusum[sn]);
-      
-      //count detected transition point number
-      if (Transition_point_OFF2ON_cusum[sn] == transition_point1) count_transition_OFF2ON++;
-
-      if (Transition_point_ON2OFF_cusum[sn] == transition_point2) count_transition_ON2OFF++;
-
-    
+      //printf("CUSUM: OFF2ON:%d  ON2OFF:%d\n",Transition_point_OFF2ON_cusum[sn],Transition_point_ON2OFF_cusum[sn]);
       if (Transition_point_OFF2ON_cusum[sn]<Transition_point_ON2OFF_cusum[sn]) {
 	//fprintf(stdout,"%lf,%d,%d\n",SNRdB[sn],Transition_point_OFF2ON_cusum[sn],Transition_point_ON2OFF_cusum[sn]);
 	for (i=0; i<FFTPOINT; i++) {
 	  Power += y[i];
 	  Power_2 += y[i]*y[i];
 	  if (i>Transition_point_OFF2ON_cusum[sn] && i < Transition_point_ON2OFF_cusum[sn]) {
-	  Power_transition_cusum += y[i];
-	  Power_transition_2_cusum += y[i]*y[i];
+	  //if (i>500&i<2000) {
+	    Power_transition_cusum += y[i];
+	    Power_transition_2_cusum += y[i]*y[i];
+	  }
+	}
+      } else {
+	for (i=0; i<FFTPOINT; i++) {
+	  Power += y[i];
+	  Power_2 += y[i]*y[i];
+	  if (i>Transition_point_OFF2ON_cusum[sn]) {
+	    //if (i>500&i<2000) {
+	    Power_transition_cusum += y[i];
+	    Power_transition_2_cusum += y[i]*y[i];
 	  }
 	}
       }
@@ -398,9 +456,13 @@ int main(int argc,char *argv[]) {
       //printf("sn=%d,Power=%lf,Power_transition=%lf\n",sn,Var,Var_transition);
       if(Var!=0.0) {
 	diff += (double)P[sn]/(double)Var;
+      }
+      if(Var_transition_cusum!=0.0) {
 	diff_transition_cusum += (double)P[sn]/(double)Var_transition_cusum;
       }
       //printf("%lf,%lf,%lf,diff=%lf\n",P[sn],Var,(double)P[sn]/(double)Var,(double)diff);
+      //printf("%lf,P[sn]/diff_cusum = %lf,diff_cusum = %lf\n",P[sn],(double)Var_transition_cusum,(double)diff_transition_cusum);
+      
       //CUSUM
       //GLR
       //diff_transition_glr += P[sn]/Var_transition_glr;
@@ -408,21 +470,13 @@ int main(int argc,char *argv[]) {
       Power = 0.0;Power_2 = 0.0;
       Power_transition_cusum = 0.0;Power_transition_2_cusum = 0.0;
     }
-    //transition detection probability
-    transition_ON2OFF_p[sn] = (double)count_transition_ON2OFF/(double)iteration; 
-    transition_OFF2ON_p[sn] = (double)count_transition_OFF2ON/(double)iteration;
-
-    //average power difference calculation
     ave_diff = 10*log10(diff/(double)iteration);
     //CUSUM
     ave_diff_transition_cusum =10*log10(diff_transition_cusum/(double)iteration);
-    //fprintf(stdout,"%lf\t%lf\t%lf\n",SNRdB[sn],ave_diff,ave_diff_transition_cusum);
-    fprintf(stdout,"%lf\t%lf\t%lf\n",SNRdB[sn],transition_ON2OFF_p[sn],transition_OFF2ON_p[sn]);
-
+    fprintf(stdout,"%lf\t%lf\t%lf\n",SNRdB[sn],ave_diff,ave_diff_transition_cusum);
+    
     diff=0.0;
     diff_transition_cusum=0.0;
-    count_transition_OFF2ON = 0;
-    count_transition_ON2OFF = 0;
   }
   return 0;
 }

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  21 JAN 2016 17:35
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  22 JAN 2016 18:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -154,25 +154,57 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip50
 \subfig@bottom=\skip51
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mathtools.sty
+Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count106
+\calc@Bcount=\count107
+\calc@Adimen=\dimen133
+\calc@Bdimen=\dimen134
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count108
+\calc@Cskip=\skip54
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count109
+\l_MT_multwidth_dim=\dimen135
+\origjot=\skip55
+\l_MT_shortvdotswithinadjustabove_dim=\dimen136
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen137
+\l_MT_above_intertext_sep=\dimen138
+\l_MT_below_intertext_sep=\dimen139
+\l_MT_above_shortintertext_sep=\dimen140
+\l_MT_below_shortintertext_sep=\dimen141
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+
 (./0_cover.tex
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 9.
@@ -262,7 +294,10 @@ measurement-based Spec-
 File: asdb.eps Graphic file (type eps)
 <asdb.eps> [12] [13]
 File: fujii_sdb.eps Graphic file (type eps)
- <fujii_sdb.eps>) (./propose.tex [14]
+ <fujii_sdb.eps> [14]
+File: transition.eps Graphic file (type eps)
+ <transition.eps>) (./propose.tex
+[15]
 Chapter 4.
 
 LaTeX Font Warning: Command \boldmath invalid in math mode on input line 7.
@@ -270,31 +305,31 @@ LaTeX Font Warning: Command \boldmath invalid in math mode on input line 7.
 
 LaTeX Font Warning: Command \mathversion invalid in math mode on input line 7.
 
-[15
+[16
 
 ]
 File: systemodel.eps Graphic file (type eps)
- <systemodel.eps> [16]
+ <systemodel.eps> [17]
 File: OFF2ON.eps Graphic file (type eps)
- <OFF2ON.eps> [17]
+ <OFF2ON.eps> [18]
 File: ON2OFF.eps Graphic file (type eps)
- <ON2OFF.eps> [18]) (./result.tex
-[19]
+ <ON2OFF.eps> [19] [20])
+(./result.tex [21]
 Chapter 5.
-[20
+[22
 
 ]
 File: transition_up.eps Graphic file (type eps)
  <transition_up.eps>
 File: transition_down.eps Graphic file (type eps)
- <transition_down.eps> [21] [22]
+ <transition_down.eps> [23]
 File: powdiff.eps Graphic file (type eps)
  <powdiff.eps>)
-(./conclude.tex [23]
+(./conclude.tex [24] [25]
 Chapter 6.
-) (./acknowledgement.tex [24
+) (./acknowledgement.tex [26
 
-]) (./reference.tex [25
+]) (./reference.tex [27
 
 ]
 Missing character: There is no ^^e2 in font cmr12!
@@ -312,15 +347,21 @@ LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
 (Font)              using `JY1/mc/m/n' instead on input line 6.
 
-[26
+
+Overfull \hbox (30.09114pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/n/12 Chart.'' http://www.tele.soumu.go.jp/resource/search/myuse/usec
+ondition/wagakuni.pdf,
+ []
+
+[28
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
 []\OT1/cmr/m/n/12 Microsoft, ``Mi-crosoft Re-ser-ach White Space Finder'' http:
 //whitespaces.
  []
 
-) (./publication.tex [27]
+) (./publication.tex [29]
 Overfull \hbox (4.6817pt too wide) in paragraph at lines 7--8
 []$[]$\OT1/cmr/m/n/12 , Takeo Fu-jii, "Tran-si-tion de-tec-tion with Spec-trum 
 Database us-ing Weighted
@@ -332,9 +373,9 @@ Overfull \hbox (12.88998pt too wide) in paragraph at lines 10--11
 n-der Mul-ti-ple ON/OFF
  []
 
-) (./appendix.tex [28
+) (./appendix.tex [30
 
-]) [29
+]) [31
 
 ] (./main.aux)
 
@@ -342,12 +383,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 1992 strings out of 495129
- 25151 string characters out of 6182594
- 326572 words of memory out of 5000000
- 5285 multiletter control sequences out of 15000+600000
+ 2534 strings out of 495129
+ 34464 string characters out of 6182594
+ 337247 words of memory out of 5000000
+ 5816 multiletter control sequences out of 15000+600000
  20085 words of font info for 77 fonts, out of 8000000 for 9000
  80 hyphenation exceptions out of 8191
- 27i,15n,33p,31666b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,16n,33p,31666b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (35 pages, 81516 bytes).
+Output written on main.dvi (37 pages, 88164 bytes).

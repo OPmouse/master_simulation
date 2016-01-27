@@ -17,14 +17,14 @@
 //paramter for sensing
 #define FFTPOINT 2048
 //parameter for PU
-#define transition_point1 500
+#define transition_point1 200
 
 //#define P 10
 #define sigma_2 1.0
 
 //common paramter
-#define SNR_STEP 30
-#define RANGE 10.0
+#define SNR_STEP 1
+#define RANGE 0.0
 #define MIN_SNR  20
 #define iteration 10000
 #define T0 10
@@ -274,6 +274,7 @@ int main(int argc,char *argv[]) {
   int Transition_point_OFF2ON_cusum[SNR_STEP];//,Transition_point_OFF2ON_glr[SNR_STEP];
   int Transition_point_ON2OFF_cusum[SNR_STEP];//,Transition_point_ON2OFF_glr[SNR_STEP];
   
+  double usage;
   
   //double F_P_OFF2ON[FFTPOINT],F_P_ON2OFF[FFTPOINT];
   
@@ -343,6 +344,8 @@ int main(int argc,char *argv[]) {
       _CUSUM(g_cusum_ON2OFF, l_ON2OFF);
       
       for (i=0; i<FFTPOINT; i++) {
+	//printf("%d,%lf\n",i,y[i]);
+	//printf("l_ON2OFF\t%d\t%lf\tl_OFF2ON\t%d\t%lf\n",i,l_ON2OFF[i],i,l_OFF2ON[i]);
 	//printf("g_ON2OFF\t%d\t%lf\tg_OFF2ON\t%d\t%lf\n",i,g_cusum_ON2OFF[i],i,g_cusum_OFF2ON[i]);
       }
       
@@ -364,7 +367,7 @@ int main(int argc,char *argv[]) {
       }
       // show transition point result.
       //printf("sn \t %d \t OFF2ON \t %d \t ON2OFF \t %d\n",sn,Transition_point_OFF2ON_cusum[sn],Transition_point_ON2OFF_cusum[sn]);
-      
+      //printf("%d\n",Transition_point_ON2OFF_cusum[sn]);
       //count detected transition point number
       if (Transition_point_OFF2ON_cusum[sn] == transition_point1) count_transition_OFF2ON++;
 
@@ -416,8 +419,10 @@ int main(int argc,char *argv[]) {
     ave_diff = 10*log10(diff/(double)iteration);
     //CUSUM
     ave_diff_transition_cusum =10*log10(diff_transition_cusum/(double)iteration);
-    //fprintf(stdout,"%lf\t%lf\t%lf\n",SNRdB[sn],ave_diff,ave_diff_transition_cusum);
-    fprintf(stdout,"%lf\t%lf\t%lf\n",SNRdB[sn],transition_ON2OFF_p[sn],transition_OFF2ON_p[sn]);
+    usage = (double)(transition_point2 - transition_point1)/(double)FFTPOINT;
+
+    fprintf(stdout,"%lf\t%lf\t%lf\n",usage,ave_diff,ave_diff_transition_cusum);
+    //fprintf(stdout,"%lf\t%lf\t%lf\n",SNRdB[sn],transition_ON2OFF_p[sn],transition_OFF2ON_p[sn]);
 
     diff=0.0;
     diff_transition_cusum=0.0;

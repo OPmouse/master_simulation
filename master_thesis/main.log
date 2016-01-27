@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  26 JAN 2016 21:18
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  27 JAN 2016 22:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -311,35 +311,51 @@ LaTeX Font Warning: Command \large invalid in math mode on input line 10.
 [16
 
 ]
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 30.
+
 File: systemodel.eps Graphic file (type eps)
- <systemodel.eps> [17]
+<systemodel.eps>
+File: cusum_image.eps Graphic file (type eps)
+ <cusum_image.eps> [17] [18]
 File: OFF2ON.eps Graphic file (type eps)
- <OFF2ON.eps> [18] [19]
+ <OFF2ON.eps> [19]
 File: ON2OFF.eps Graphic file (type eps)
- <ON2OFF.eps> [20]
+ <ON2OFF.eps>
+[20]
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 151.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 151.
+
+[21]
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 161.
+
+File: fp.eps Graphic file (type eps)
+<fp.eps> [22]
 File: peak_OFF2ON.eps Graphic file (type eps)
-
-<peak_OFF2ON.eps>
+ <peak_OFF2ON.eps>
 File: peak_ON2OFF.eps Graphic file (type eps)
- <peak_ON2OFF.eps> [21]) (./result.tex [22]
+ <peak_ON2OFF.eps>) (./result.tex [23] [24]
 Chapter 5.
-[23
+[25
 
-] [24]
+] [26]
 File: transition_up.eps Graphic file (type eps)
  <transition_up.eps>
 File: transition_down.eps Graphic file (type eps)
  <transition_down.eps>
-File: powdiff.eps Graphic file (type eps)
- <powdiff.eps>
+File: peak.eps Graphic file (type eps)
+ <peak.eps>
 File: cdf_OFF2ON.eps Graphic file (type eps)
 
 <cdf_OFF2ON.eps>
 File: cdf_ON2OFF.eps Graphic file (type eps)
  <cdf_ON2OFF.eps>
 File: per.eps Graphic file (type eps)
- <per.eps>) (./conclude.tex [25] [26] [27]
-[28] [29]
+ <per.eps>) (./conclude.tex [27] [28] [29]
 Chapter 6.
 ) (./acknowledgement.tex [30
 
@@ -397,12 +413,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 2554 strings out of 495129
- 34703 string characters out of 6182594
- 337306 words of memory out of 5000000
- 5829 multiletter control sequences out of 15000+600000
+ 2561 strings out of 495129
+ 34776 string characters out of 6182594
+ 338340 words of memory out of 5000000
+ 5834 multiletter control sequences out of 15000+600000
  20930 words of font info for 80 fonts, out of 8000000 for 9000
  80 hyphenation exceptions out of 8191
- 27i,16n,33p,31666b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,17n,33p,31666b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (41 pages, 90416 bytes).
+Output written on main.dvi (41 pages, 94076 bytes).

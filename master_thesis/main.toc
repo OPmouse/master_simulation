@@ -19,9 +19,10 @@
 \contentsline {subsection}{\numberline {4.2.1}CUSUM algorithm}{17}
 \contentsline {subsection}{\numberline {4.2.2}GLR algorithm}{19}
 \contentsline {subsection}{\numberline {4.2.3}Threshold configuration for CUSUM and GLR algorithm}{22}
-\contentsline {chapter}{\numberline {5}Simulation}{23}
-\contentsline {section}{\numberline {5.1}Received Power detection}{23}
-\contentsline {section}{\numberline {5.2}Simulation results and performance evulation}{24}
+\contentsline {section}{\numberline {4.3}Peak detection for transition point}{23}
+\contentsline {chapter}{\numberline {5}Simulation}{25}
+\contentsline {section}{\numberline {5.1}Received Power detection}{25}
+\contentsline {section}{\numberline {5.2}Simulation results and performance evulation}{26}
 \contentsline {chapter}{\numberline {6}Conclusion}{30}
 \contentsline {chapter}{Acknowledgement}{31}
 \contentsline {chapter}{References}{32}

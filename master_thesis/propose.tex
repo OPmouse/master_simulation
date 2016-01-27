@@ -27,11 +27,13 @@ If the primary user is not transmitting, $y[i] = n[i]$, in which $n[i]$ is Addat
 In this section, transition point detection algorithm for the status of primary user is introduced in detail. As the Fig. \ref{system_model} is shown, the sample of the ON and OFF status follows a Gaussian distribution $\mathcal{N}(0,\sigma^2+P)$ and $\mathcal{N}(0,\sigma^2)$ respectively. The probability density function(PDF) follows the eq. (\ref{normal}) is given by
 
 \begin{eqnarray}
+{\large
 \begin{cases}
-\;f_0(t) = \frac{1}{\sqrt{2\pi\sigma^2}} \rm{exp}^{-\frac{t^2}{2\sigma^2}} \\
+\;f_0(t) = \frac{1}{\sqrt{2\pi\sigma^2}} \rm{exp}\left\{-\frac{t^2}{2\sigma^2}\right\} \\
 \; \\ \nonumber
-\;f_1(t) = \frac{1}{\sqrt{2\pi(\sigma^2+P)}} \rm{exp}^{-\frac{t^2}{2(\sigma^2+P)}}.
+\;f_1(t) = \frac{1}{\sqrt{2\pi(\sigma^2+P)}} \rm{exp}\left\{-\frac{t^2}{2(\sigma^2+P)}\right\}.
 \end{cases}
+}
 \label{normal}
 \end{eqnarray}
 
@@ -47,6 +49,17 @@ In this section, transition point detection algorithm for the status of primary 
 \subsection{CUSUM algorithm}
 The cumulative sum (CUSUM) algorithm, which was first proposed by Page in \cite{ref:CUSUM}, is used to detection the transition point when $P$ and $\sigma^2$ is assumed to be known.
 The PDF $f_0(t)$ and $f_1(t)$ are fully specified. Thus, the log probability density ratio $l(y[i])$ is also fully defined by the eq. (\ref{like1}) and (\ref{like2}),
+
+
+\begin{center}
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=120mm]{cusum_image.eps}
+    \label{cusum_image}
+    \caption{The image of cusum algorithm.}
+  \end{figure}
+\end{center} 
+
 
 \begin{eqnarray}
 l_{0}(y[i]) &=& {\rm ln}\left\{\frac{f_0(y[i])}{f_1(y[i])}\right\} \label{like1} \\ 
@@ -122,9 +135,10 @@ f(P) &=& \sum_{i=k+1}^t\left\{ \frac{Py^2[i]}{2(P+\sigma^2)\sigma^2}+\frac{1}{2}
 &=&\frac{P}{2(P+\sigma^2)\sigma^2}\hat{y}+(t-k)\frac{1}{2}{\rm ln}\left\{ \frac{\sigma^2}{P+\sigma^2} \right\},
 \label{fp}
 \end{eqnarray}
-where $\hat{y}=\sum_{i=k+1}^t y[i]$. To find a the power $P^{*}$ that maximizes the function $f(P)$ over $P \in [P_{{\rm min}}, P_{{\rm max}}]$, it can be calculated as below,
+where $\hat{y}=\sum_{i=k+1}^t y[i]^2$. To find a the power $P^{*}$ that maximizes the function $f(P)$ over $P \in [P_{{\rm min}}, P_{{\rm max}}]$, it can be calculated as below,
 
 \begin{align}
+{\large
 P^{*}=
 \begin{cases}
 \;P_{{\rm max}}, & (t-k)\leq\frac{\hat{y}}{P_{{\rm max}}+\sigma^2}, \\
@@ -133,31 +147,39 @@ P^{*}=
 \; \\
 \; P_{{\rm min}}, & (t-k) \geq \frac{\hat{y}}{P_{{\rm min}}+\sigma^2}.
 \end{cases}
+}
 \end{align}
 
+As a derivation, the the function $f(P)$ is differentiated with respect to $P$ first and the eq. \ref{Differentiate} is shown as follows,
+\begin{eqnarray}
+f^{'}(P)=\frac{\hat{y}}{2}\frac{1}{(P+\sigma^2)^2}-\frac{t-k}{2(P+\sigma^2)}.
+\label{Differentiate}
+\end{eqnarray}
+
+And then, $f^{'}(P)=0$ is set to determine a extreme value and it is $P^{*}=\frac{\hat{y}}{t-k}-\sigma^2$, which $P^{*}$ is assumed to be the extreme point of the function  $f^{'}(P)$. Because the maximum of ${f(P)}$ is the final goal we want, the appropiate $P$ should be determined during the the range $[P_{min},P_{max}]$. As the function $f(P)$ is a concave function as shown in Fig. \ref{concave}, the extreme value is the value when  $P^{*}=\frac{\hat{y}}{t-k}-\sigma^2$ and 3 possible cases can be considered as follows,
+\begin{eqnarray}
+{\large
+\begin{cases}
+\;1. \ \ \ {\rm max}\left\{f(P)\right\}=f(P_{{\rm max}}), \ \ \ P_{{\rm max}}<\frac{\hat{y}}{t-k}-\sigma^2, \\
+\;\\
+\;2. \ \ \ {\rm max}\left\{f(P)\right\}=f(P^{*}), \ \ \ P_{{\rm min}}<\frac{\hat{y}}{t-k}-\sigma^2<P_{{\rm min}},\\
+\;\\
+\;3. \ \ \ {\rm max}\left\{f(P)\right\}=f(P_{{\rm min}}), \ \ \ P_{{\rm min}}>\frac{\hat{y}}{t-k}-\sigma^2.
+\end{cases}
+}
+\end{eqnarray}
+Finally, the maximum value of function $f(P)$ can be determined by eq.\ref{maxP} as shown before.
 
 As same as the CUSUM algorithm, in the GLR algorithm the statistic value $g_t$ is calculated in eq.(\ref{Glr}) with choosing the a power $P^{*}$ from the eq.(\ref{maxP}), and is compared with the threshold $h$. Once $g_t>h$, the existance of the primary user is declared.
 
-
 \begin{center}
   \begin{figure}[t]
     \centering
-    \includegraphics[width=120mm]{peak_OFF2ON.eps}
-    \label{peak_OFF2ON}
-    \caption{Peak detection image for rise up point.}
+    \includegraphics[width=100mm]{fp.eps}
+    \label{concave}
+    \caption{The image of funcition $f(P)$.}
   \end{figure}
 \end{center} 
-
-
-\begin{center}
-  \begin{figure}[t]
-    \centering
-    \includegraphics[width=120mm]{peak_ON2OFF.eps}
-    \label{peak_ON2OFF}
-    \caption{Peak detection image for rise down point.}
-  \end{figure}
-\end{center} 
-
 
 \subsection{Threshold configuration for CUSUM and GLR algorithm}
 To set a threshold for the transition point detection, we first assume $t_0$ denotes the time when the statistic $g_t$ exceeds the threshold $h$, and define $\bar{T_0}=E[t_0]$ is the mean time to a false alarm. Following \cite{ref:threshold_cusum} and \cite{ref:threshold_GLR}, some simple bounds on $\bar{T_0}$ can be derived.
@@ -175,3 +197,23 @@ and $a$ follows the following inequality.
 \bar{T_0} \geq \frac{1}{a}.
 \end{eqnarray}
 
+\section{Peak detection for transition point}
+
+
+\begin{center}
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=100mm]{peak_OFF2ON.eps}
+    \label{peak_OFF2ON}
+    \caption{Peak detection image for rise up point.}
+  \end{figure}
+\end{center} 
+
+\begin{center}
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=100mm]{peak_ON2OFF.eps}
+    \label{peak_ON2OFF}
+    \caption{Peak detection image for rise down point.}
+  \end{figure}
+\end{center} 

@@ -1,0 +1,683 @@
+This is TeX, Version 3.1415926 (TeX Live 2013/Debian) (format=tex 2015.11.17)  28 JAN 2016 14:16
+**\nonstopmode\input 0_cover.tex
+(./0_cover.tex
+! Undefined control sequence.
+l.1 \thispagestyle
+                  {empty}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.2 \begin
+          {center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.3   \vspace
+             *{20mm}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5   {\LARGE
+              ^^e5^^b9^^b3^^e6^^88^^9027^^e5^^b9^^b4^^e5^^ba^^a6^^e4^^bf^^ae...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^b9 in font cmr10!
+Missing character: There is no ^^b3 in font cmr10!
+Missing character: There is no ^^e6 in font cmr10!
+Missing character: There is no ^^88 in font cmr10!
+Missing character: There is no ^^90 in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^b9 in font cmr10!
+Missing character: There is no ^^b4 in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^ba in font cmr10!
+Missing character: There is no ^^a6 in font cmr10!
+Missing character: There is no ^^e4 in font cmr10!
+Missing character: There is no ^^bf in font cmr10!
+Missing character: There is no ^^ae in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^a3 in font cmr10!
+Missing character: There is no ^^ab in font cmr10!
+Missing character: There is no ^^e8 in font cmr10!
+Missing character: There is no ^^ab in font cmr10!
+Missing character: There is no ^^96 in font cmr10!
+Missing character: There is no ^^e6 in font cmr10!
+Missing character: There is no ^^96 in font cmr10!
+Missing character: There is no ^^87 in font cmr10!
+! Argument of \\ has an extra }.
+<inserted text> 
+                \par 
+<to be read again> 
+                   }
+l.5 ...^^ae^^e5^^a3^^ab^^e8^^ab^^96^^e6^^96^^87\\}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+<to be read again> 
+                   }
+l.5 ...^^ae^^e5^^a3^^ab^^e8^^ab^^96^^e6^^96^^87\\}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+l.7   \vspace
+             {10mm}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.9   {\huge
+            \bf Radio Environment Database considering Primary User Activity...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.11   \vspace
+              {5mm}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.13   {\huge
+             \bf ^^e3^^83^^97^^e3^^83^^a9^^e3^^82^^a4^^e3^^83^^9e^^e3^^83^^a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ^^e3 in font cmbx10!
+Missing character: There is no ^^83 in font cmbx10!
+Missing character: There is no ^^97 in font cmbx10!
+Missing character: There is no ^^e3 in font cmbx10!
+Missing character: There is no ^^83 in font cmbx10!
+Missing character: There is no ^^a9 in font cmbx10!
+Missing character: There is no ^^e3 in font cmbx10!
+Missing character: There is no ^^82 in font cmbx10!
+Missing character: There is no ^^a4 in font cmbx10!
+Missing character: There is no ^^e3 in font cmbx10!
+Missing character: There is no ^^83 in font cmbx10!
+Missing character: There is no ^^9e in font cmbx10!
+Missing character: There is no ^^e3 in font cmbx10!
+Missing character: There is no ^^83 in font cmbx10!
+Missing character: There is no ^^aa in font cmbx10!
+Missing character: There is no ^^e3 in font cmbx10!
+Missing character: There is no ^^83 in font cmbx10!
+Missing character: There is no ^^a6 in font cmbx10!
+Missing character: There is no ^^e3 in font cmbx10!
+Missing character: There is no ^^83 in font cmbx10!
+Missing character: There is no ^^bc in font cmbx10!
+Missing character: There is no ^^e3 in font cmbx10!
+Missing character: There is no ^^82 in font cmbx10!
+Missing character: There is no ^^b6 in font cmbx10!
+Missing character: There is no ^^e3 in font cmbx10!
+Missing character: There is no ^^81 in font cmbx10!
+Missing character: There is no ^^ae in font cmbx10!
+Missing character: There is no ^^e6 in font cmbx10!
+Missing character: There is no ^^99 in font cmbx10!
+Missing character: There is no ^^82 in font cmbx10!
+Missing character: There is no ^^e9 in font cmbx10!
+Missing character: There is no ^^96 in font cmbx10!
+Missing character: There is no ^^93 in font cmbx10!
+Missing character: There is no ^^e7 in font cmbx10!
+Missing character: There is no ^^9a in font cmbx10!
+Missing character: There is no ^^84 in font cmbx10!
+Missing character: There is no ^^e5 in font cmbx10!
+Missing character: There is no ^^a4 in font cmbx10!
+Missing character: There is no ^^89 in font cmbx10!
+Missing character: There is no ^^e5 in font cmbx10!
+Missing character: There is no ^^8c in font cmbx10!
+Missing character: There is no ^^96 in font cmbx10!
+Missing character: There is no ^^e3 in font cmbx10!
+Missing character: There is no ^^82 in font cmbx10!
+Missing character: There is no ^^92 in font cmbx10!
+Missing character: There is no ^^e8 in font cmbx10!
+Missing character: There is no ^^80 in font cmbx10!
+Missing character: There is no ^^83 in font cmbx10!
+Missing character: There is no ^^e6 in font cmbx10!
+Missing character: There is no ^^85 in font cmbx10!
+Missing character: There is no ^^ae in font cmbx10!
+Missing character: There is no ^^e3 in font cmbx10!
+Missing character: There is no ^^81 in font cmbx10!
+Missing character: There is no ^^97 in font cmbx10!
+Missing character: There is no ^^e3 in font cmbx10!
+Missing character: There is no ^^81 in font cmbx10!
+Missing character: There is no ^^9f in font cmbx10!
+! Argument of \\ has an extra }.
+<inserted text> 
+                \par 
+<to be read again> 
+                   }
+l.13 ...^bc^^e3^^82^^b9^^e6^^a7^^8b^^e7^^af^^89\\}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+^^e9^^9b^^bb^^e6^^b3^^a2^^e7^^92^^b0^^e5^^a2^^83^^e3^^83^^87^^e3^^83^^bc\ETC.
+! Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+<to be read again> 
+                   }
+l.13 ...^bc^^e3^^82^^b9^^e6^^a7^^8b^^e7^^af^^89\\}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+l.15   \vspace
+              {10mm}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.17   \begin
+             {table}[h]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.18     \LARGE
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.19     \begin
+               {center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.20       \begin
+                 {tabular}{ll}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^ad in font cmr10!
+Missing character: There is no ^^a6 in font cmr10!
+Missing character: There is no ^^e7 in font cmr10!
+Missing character: There is no ^^94 in font cmr10!
+Missing character: There is no ^^9f in font cmr10!
+Missing character: There is no ^^e7 in font cmr10!
+Missing character: There is no ^^95 in font cmr10!
+Missing character: There is no ^^aa in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^8f in font cmr10!
+Missing character: There is no ^^b7 in font cmr10!
+! Misplaced alignment tab character &.
+l.21 ...^^a6^^e7^^94^^9f^^e7^^95^^aa^^e5^^8f^^b7 &
+                                                   1431019\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Runaway argument?
+ ^^e6^^b0^^8f^^e5^^90^^8d & ^^e7^^8e^^8b ^^e6^^98^^8a\\ ^^e6^^83^^85^^e5\ETC.
+! Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+l.30 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+l.31   \begin
+             {table}[h]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.32     \Large
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.33     \begin
+               {center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.34       \begin
+                 {tabular}{|c|c|c|}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.35         \hline
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.36         \makebox
+                     [90pt][c]{^^e5^^b0^^82^^e6^^94^^bb^^e4^^b8^^bb^^e4^^bb^...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^b0 in font cmr10!
+Missing character: There is no ^^82 in font cmr10!
+Missing character: There is no ^^e6 in font cmr10!
+Missing character: There is no ^^94 in font cmr10!
+Missing character: There is no ^^bb in font cmr10!
+Missing character: There is no ^^e4 in font cmr10!
+Missing character: There is no ^^b8 in font cmr10!
+Missing character: There is no ^^bb in font cmr10!
+Missing character: There is no ^^e4 in font cmr10!
+Missing character: There is no ^^bb in font cmr10!
+Missing character: There is no ^^bb in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^8d in font cmr10!
+Missing character: There is no ^^b0 in font cmr10!
+! Misplaced alignment tab character &.
+l.36 ...^bb^^e4^^b8^^bb^^e4^^bb^^bb^^e5^^8d^^b0} &
+                                                   \makebox[90pt][c]{^^e4^^b...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.36 ...b8^^bb^^e4^^bb^^bb^^e5^^8d^^b0} & \makebox
+                                                  [90pt][c]{^^e4^^b8^^bb^^e6...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ^^e4 in font cmr10!
+Missing character: There is no ^^b8 in font cmr10!
+Missing character: There is no ^^bb in font cmr10!
+Missing character: There is no ^^e6 in font cmr10!
+Missing character: There is no ^^8c in font cmr10!
+Missing character: There is no ^^87 in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^b0 in font cmr10!
+Missing character: There is no ^^8e in font cmr10!
+Missing character: There is no ^^e6 in font cmr10!
+Missing character: There is no ^^95 in font cmr10!
+Missing character: There is no ^^99 in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^93 in font cmr10!
+Missing character: There is no ^^a1 in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^8d in font cmr10!
+Missing character: There is no ^^b0 in font cmr10!
+! Misplaced alignment tab character &.
+l.36 ...8e^^e6^^95^^99^^e5^^93^^a1^^e5^^8d^^b0}  &
+                                                   \makebox[90pt][c]{^^e6^^8...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.36 ...5^^99^^e5^^93^^a1^^e5^^8d^^b0}  & \makebox
+                                                  [90pt][c]{^^e6^^8c^^87^^e5...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ^^e6 in font cmr10!
+Missing character: There is no ^^8c in font cmr10!
+Missing character: There is no ^^87 in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^b0 in font cmr10!
+Missing character: There is no ^^8e in font cmr10!
+Missing character: There is no ^^e6 in font cmr10!
+Missing character: There is no ^^95 in font cmr10!
+Missing character: There is no ^^99 in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^93 in font cmr10!
+Missing character: There is no ^^a1 in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^8d in font cmr10!
+Missing character: There is no ^^b0 in font cmr10!
+Runaway argument?
+ \hline &&\\ &&\\ &&\\ &&\\ \hline \end {tabular} \end {center} \end \ETC.
+! Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+l.47 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+l.48 \clearpage
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.49 \thispagestyle
+                   {empty}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.50 \begin
+           {center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.51   {\Large
+               ^^e4^^bf^^ae ^^e5^^a3^^ab ^^e8^^ab^^96 ^^e6^^96^^87 ^^e3^^81^...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ^^e4 in font cmr10!
+Missing character: There is no ^^bf in font cmr10!
+Missing character: There is no ^^ae in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^a3 in font cmr10!
+Missing character: There is no ^^ab in font cmr10!
+Missing character: There is no ^^e8 in font cmr10!
+Missing character: There is no ^^ab in font cmr10!
+Missing character: There is no ^^96 in font cmr10!
+Missing character: There is no ^^e6 in font cmr10!
+Missing character: There is no ^^96 in font cmr10!
+Missing character: There is no ^^87 in font cmr10!
+Missing character: There is no ^^e3 in font cmr10!
+Missing character: There is no ^^81 in font cmr10!
+Missing character: There is no ^^ae in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^92 in font cmr10!
+Missing character: There is no ^^8c in font cmr10!
+Missing character: There is no ^^e6 in font cmr10!
+Missing character: There is no ^^96 in font cmr10!
+Missing character: There is no ^^87 in font cmr10!
+Missing character: There is no ^^e8 in font cmr10!
+Missing character: There is no ^^a6 in font cmr10!
+Missing character: There is no ^^81 in font cmr10!
+Missing character: There is no ^^e6 in font cmr10!
+Missing character: There is no ^^97 in font cmr10!
+Missing character: There is no ^^a8 in font cmr10!
+! Undefined control sequence.
+l.52   \renewcommand
+                    {\arraystretch}{1.5}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.52   \renewcommand{\arraystretch
+                                  }{1.5}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.53   \begin
+             {table}[!h]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.55     \begin
+               {tabular}{|c|c|c|c|}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.56       \hline
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ^^e7 in font cmr10!
+Missing character: There is no ^^a0 in font cmr10!
+Missing character: There is no ^^94 in font cmr10!
+Missing character: There is no ^^e7 in font cmr10!
+Missing character: There is no ^^a9 in font cmr10!
+Missing character: There is no ^^b6 in font cmr10!
+Missing character: There is no ^^e7 in font cmr10!
+Missing character: There is no ^^a7 in font cmr10!
+Missing character: There is no ^^91 in font cmr10!
+Missing character: There is no ^^e3 in font cmr10!
+Missing character: There is no ^^83 in font cmr10!
+Missing character: There is no ^^bb in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^b0 in font cmr10!
+Missing character: There is no ^^82 in font cmr10!
+Missing character: There is no ^^e6 in font cmr10!
+Missing character: There is no ^^94 in font cmr10!
+Missing character: There is no ^^bb in font cmr10!
+! Misplaced alignment tab character &.
+l.57 ...^^91^^e3^^83^^bb^^e5^^b0^^82^^e6^^94^^bb &
+                                                   \multicolumn{3}{|c|}{^^e5...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.57 ...^bb^^e5^^b0^^82^^e6^^94^^bb & \multicolumn
+                                                  {3}{|c|}{^^e5^^a4^^a7^^e5^...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^a4 in font cmr10!
+Missing character: There is no ^^a7 in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^ad in font cmr10!
+Missing character: There is no ^^a6 in font cmr10!
+Missing character: There is no ^^e9 in font cmr10!
+Missing character: There is no ^^99 in font cmr10!
+Missing character: There is no ^^a2 in font cmr10!
+Missing character: There is no ^^e3 in font cmr10!
+Missing character: There is no ^^80 in font cmr10!
+Missing character: There is no ^^80 in font cmr10!
+Missing character: There is no ^^e6 in font cmr10!
+Missing character: There is no ^^83 in font cmr10!
+Missing character: There is no ^^85 in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^a0 in font cmr10!
+Missing character: There is no ^^b1 in font cmr10!
+Missing character: There is no ^^e7 in font cmr10!
+Missing character: There is no ^^90 in font cmr10!
+Missing character: There is no ^^86 in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^b7 in font cmr10!
+Missing character: There is no ^^a5 in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^ad in font cmr10!
+Missing character: There is no ^^a6 in font cmr10!
+Missing character: There is no ^^e7 in font cmr10!
+Missing character: There is no ^^a0 in font cmr10!
+Missing character: There is no ^^94 in font cmr10!
+Missing character: There is no ^^e7 in font cmr10!
+Missing character: There is no ^^a9 in font cmr10!
+Missing character: There is no ^^b6 in font cmr10!
+Missing character: There is no ^^e7 in font cmr10!
+Missing character: There is no ^^a7 in font cmr10!
+Missing character: There is no ^^91 in font cmr10!
+Missing character: There is no ^^e3 in font cmr10!
+Missing character: There is no ^^80 in font cmr10!
+Missing character: There is no ^^80 in font cmr10!
+Missing character: There is no ^^e6 in font cmr10!
+Missing character: There is no ^^83 in font cmr10!
+Missing character: There is no ^^85 in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^a0 in font cmr10!
+Missing character: There is no ^^b1 in font cmr10!
+Missing character: There is no ^^e3 in font cmr10!
+Missing character: There is no ^^83 in font cmr10!
+Missing character: There is no ^^bb in font cmr10!
+Missing character: There is no ^^e9 in font cmr10!
+Missing character: There is no ^^80 in font cmr10!
+Missing character: There is no ^^9a in font cmr10!
+Missing character: There is no ^^e4 in font cmr10!
+Missing character: There is no ^^bf in font cmr10!
+Missing character: There is no ^^a1 in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^b7 in font cmr10!
+Missing character: There is no ^^a5 in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^ad in font cmr10!
+Missing character: There is no ^^a6 in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^b0 in font cmr10!
+Missing character: There is no ^^82 in font cmr10!
+Missing character: There is no ^^e6 in font cmr10!
+Missing character: There is no ^^94 in font cmr10!
+Missing character: There is no ^^bb in font cmr10!
+Missing character: There is no ^^e3 in font cmr10!
+Missing character: There is no ^^80 in font cmr10!
+Missing character: There is no ^^80 in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^8d in font cmr10!
+Missing character: There is no ^^9a in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^a3 in font cmr10!
+Missing character: There is no ^^ab in font cmr10!
+Missing character: There is no ^^e5 in font cmr10!
+Missing character: There is no ^^89 in font cmr10!
+Missing character: There is no ^^8d in font cmr10!
+Missing character: There is no ^^e6 in font cmr10!
+Missing character: There is no ^^9c in font cmr10!
+Missing character: There is no ^^9f in font cmr10!
+Missing character: There is no ^^e8 in font cmr10!
+Missing character: There is no ^^aa in font cmr10!
+Missing character: There is no ^^b2 in font cmr10!
+Missing character: There is no ^^e7 in font cmr10!
+Missing character: There is no ^^a8 in font cmr10!
+Missing character: There is no ^^8b in font cmr10!
+Runaway argument?
+ \hline \makebox [0.15\hsize ][c]{^^e6^^b0^^8f^^e3^^80^^80^^e3^^80^^80\ETC.
+! Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+l.72 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[1] )
+Output written on 0_cover.dvi (1 page, 612 bytes).

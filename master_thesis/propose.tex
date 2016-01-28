@@ -190,7 +190,7 @@ For CUSUM algorithm, the relationship between the mean false alarm and threshold
 \end{eqnarray}
 For GLR algorithm, the threshold is set to be $h=-{\rm ln}\left\{\frac{a}{b}\right\}$ , where 
 \begin{eqnarray}
-b=3{\rm ln}\left\{a^{-1}(1+\frac{1}{D(f_1,P_{min}||f_0)})^2\right\},
+b=3{\rm ln}\left\{a^{-1}(1+\frac{1}{D(f_1,P_{{\rm min}}||f_0)})^2\right\},
 \end{eqnarray}
 and $a$ follows the following inequality.
 \begin{eqnarray}
@@ -198,10 +198,18 @@ and $a$ follows the following inequality.
 \end{eqnarray}
 
 \section{Peak detection for transition point}
+\label{PeakD}
+Except CUSUM and GLR algorithm, we propose a peak detection for transition point detection. As shown in Fig. \ref{peak_OFF2ON} and \ref{peak_ON2OFF}, the cumulative sum of the log likelihood raito $l_1(y)$ and $l_0(y)$ will reach a peak value when a transition point between ON and OFF or OFF and ON. Therefore, instead of a threshold-based transition point detection method, a peak detection is adopted to detect transition point more accurately. Same as CUSUM and GLR algorithm, a detailed peak detetion process for transition point detecting is shown as follows.  
 
+\begin{enumerate}
+  \item[i]. compute $l(y)$ for each sample using eq. (\ref{like1}) or (\ref{like2}).
+  \item[ii]. compute the statistic $g_t$ using eq. (\ref{rec}).
+  \item[iii]. detect the maximum of $g_t$ as the peak value. 
+  \item[iv]. If the peak value of $g_t$ is detected, the sample ID associated with peak value is declared as the transition point, which is from ON to OFF or OFF to ON.
+\end{enumerate}
 
 \begin{center}
-  \begin{figure}[t]
+  \begin{figure}[!htp]
     \centering
     \includegraphics[width=100mm]{peak_OFF2ON.eps}
     \label{peak_OFF2ON}
@@ -210,10 +218,22 @@ and $a$ follows the following inequality.
 \end{center} 
 
 \begin{center}
-  \begin{figure}[t]
+  \begin{figure}[!htp]
     \centering
     \includegraphics[width=100mm]{peak_ON2OFF.eps}
     \label{peak_ON2OFF}
     \caption{Peak detection image for rise down point.}
   \end{figure}
 \end{center} 
+
+\section{Avtive Period Detection}
+In this section, the proposed active period detection using the CUSUM and GLR algorithm and peak detection discussed above is introduced. 
+
+First, the statistics $g_t$ calculation results related to the sample ID using the probability density ratio $l_0(y)$ and $l_1(y)$ are shown in Figs.\ref{OFF2ON} and \ref{ON2OFF}, respectively. The rise up point is set to be the 512th sample and the rise down point is set to be 1532th sample.
+In Figure \ref{OFF2ON}, when a status of the primary user from OFF to ON changes, the statistic $g_t$ shows a increase trend, and when the status changes from ON to OFF, a decrease trend is shown. The reason is that if the probability density ratio $l_0(y)$ is used to calculate the statistics $g_t$, the ON samples show a positive trend and OFF samples a negative trend. Then in this case, the statistics $g_t$ exceeds the threshold $h$, the rise up point is declared to be detected.
+
+Samely, in Figure \ref{ON2OFF}, when a status of the primary user from OFF to ON changes, the statistic $g_t$ shows a increase trend, and when the status changes from ON to OFF, a decrease trend is shown. The reason is that if the probability density ratio $l_1(y)$ is used to calculate the statistics $g_t$, the ON samples show a negative trend and OFF samples a positive trend. Thus, the statistics $g_t$ exceeds the threshold $h$, the rise down point is declared to be detected.
+
+At last, as introduced in sec.\ref{PeakD}, the active period detection with peak detection utilizes the peak value of $g_t$ to dectect the transition point to be Different from CUSUM and GLR algorithm.
+
+Based on the detected rise up and rise down point, an active period of the primary user is extracted to calculate the received power. Since the only ON samples is detected to be used for calculating the received power, it may mitigate the sensing error compared with not considering ON sample extraction.

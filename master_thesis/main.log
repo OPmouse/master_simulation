@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  27 JAN 2016 22:37
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  28 JAN 2016 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -338,28 +338,29 @@ File: fp.eps Graphic file (type eps)
 File: peak_OFF2ON.eps Graphic file (type eps)
  <peak_OFF2ON.eps>
 File: peak_ON2OFF.eps Graphic file (type eps)
- <peak_ON2OFF.eps>) (./result.tex [23] [24]
+ <peak_ON2OFF.eps> [23] [24]) (./result.tex
+[25]
 Chapter 5.
-[25
+[26
 
-] [26]
+]
 File: transition_up.eps Graphic file (type eps)
  <transition_up.eps>
 File: transition_down.eps Graphic file (type eps)
- <transition_down.eps>
+ <transition_down.eps> [27]
+File: cdf_OFF2ON.eps Graphic file (type eps)
+ <cdf_OFF2ON.eps>
+File: cdf_ON2OFF.eps Graphic file (type eps)
+
+<cdf_ON2OFF.eps>
 File: peak.eps Graphic file (type eps)
  <peak.eps>
-File: cdf_OFF2ON.eps Graphic file (type eps)
-
-<cdf_OFF2ON.eps>
-File: cdf_ON2OFF.eps Graphic file (type eps)
- <cdf_ON2OFF.eps>
 File: per.eps Graphic file (type eps)
- <per.eps>) (./conclude.tex [27] [28] [29]
+ <per.eps>) (./conclude.tex [28] [29] [30]
 Chapter 6.
-) (./acknowledgement.tex [30
+) (./acknowledgement.tex [31
 
-]) (./reference.tex [31
+]) (./reference.tex [32
 
 ]
 Missing character: There is no ^^e2 in font cmr12!
@@ -383,7 +384,7 @@ Overfull \hbox (30.09114pt too wide) in paragraph at lines 7--8
 ondition/wagakuni.pdf,
  []
 
-[32
+[33
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 16--17
@@ -391,7 +392,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 //whitespaces.
  []
 
-) (./publication.tex [33]
+) (./publication.tex [34]
 Overfull \hbox (4.6817pt too wide) in paragraph at lines 7--8
 []$[]$\OT1/cmr/m/n/12 , Takeo Fu-jii, "Tran-si-tion de-tec-tion with Spec-trum 
 Database us-ing Weighted
@@ -403,9 +404,9 @@ Overfull \hbox (12.88998pt too wide) in paragraph at lines 10--11
 n-der Mul-ti-ple ON/OFF
  []
 
-) (./appendix.tex [34
+) (./appendix.tex [35
 
-]) [35
+]) [36
 
 ] (./main.aux)
 
@@ -413,12 +414,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 2561 strings out of 495129
- 34776 string characters out of 6182594
- 338340 words of memory out of 5000000
- 5834 multiletter control sequences out of 15000+600000
+ 2562 strings out of 495129
+ 34783 string characters out of 6182594
+ 338351 words of memory out of 5000000
+ 5835 multiletter control sequences out of 15000+600000
  20930 words of font info for 80 fonts, out of 8000000 for 9000
  80 hyphenation exceptions out of 8191
  27i,17n,33p,31666b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (41 pages, 94076 bytes).
+Output written on main.dvi (42 pages, 96860 bytes).

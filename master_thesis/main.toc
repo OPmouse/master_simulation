@@ -20,12 +20,13 @@
 \contentsline {subsection}{\numberline {4.2.2}GLR algorithm}{19}
 \contentsline {subsection}{\numberline {4.2.3}Threshold configuration for CUSUM and GLR algorithm}{22}
 \contentsline {section}{\numberline {4.3}Peak detection for transition point}{23}
-\contentsline {chapter}{\numberline {5}Simulation}{25}
-\contentsline {section}{\numberline {5.1}Received Power detection}{25}
-\contentsline {section}{\numberline {5.2}Simulation results and performance evulation}{26}
-\contentsline {chapter}{\numberline {6}Conclusion}{30}
-\contentsline {chapter}{Acknowledgement}{31}
-\contentsline {chapter}{References}{32}
-\contentsline {chapter}{Publications}{34}
-\contentsline {chapter}{Appendix}{35}
+\contentsline {section}{\numberline {4.4}Avtive Period Detection}{23}
+\contentsline {chapter}{\numberline {5}Simulation}{26}
+\contentsline {section}{\numberline {5.1}Performance evulation}{26}
+\contentsline {section}{\numberline {5.2}Simulation results}{26}
+\contentsline {chapter}{\numberline {6}Conclusion}{31}
+\contentsline {chapter}{Acknowledgement}{32}
+\contentsline {chapter}{References}{33}
+\contentsline {chapter}{Publications}{35}
+\contentsline {chapter}{Appendix}{36}
 \contentsfinish 

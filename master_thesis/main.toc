@@ -22,7 +22,7 @@
 \contentsline {section}{\numberline {4.3}Peak detection for transition point}{23}
 \contentsline {section}{\numberline {4.4}Avtive Period Detection}{23}
 \contentsline {chapter}{\numberline {5}Simulation}{26}
-\contentsline {section}{\numberline {5.1}Performance evulation}{26}
+\contentsline {section}{\numberline {5.1}Performance evalution}{26}
 \contentsline {section}{\numberline {5.2}Simulation results}{27}
 \contentsline {chapter}{\numberline {6}Conclusion}{31}
 \contentsline {chapter}{Acknowledgement}{32}

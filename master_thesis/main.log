@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  28 JAN 2016 16:57
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  28 JAN 2016 21:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -228,13 +228,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 
 ]) [3
 
-] (./main.toc
-Overfull \hbox (11.432pt too wide) in paragraph at lines 16--16
- [] []\OT1/cmr/bx/n/12 Active Pe-riod De-tec-tion Method of Pri-mary Sig-nal fo
-r Spec-trum Database []  
- []
-
-[4
+] (./main.toc [4
 
 ])
 \tf@toc=\write3
@@ -347,7 +341,7 @@ Chapter 5.
 File: transition_up.eps Graphic file (type eps)
  <transition_up.eps>
 File: transition_down.eps Graphic file (type eps)
- <transition_down.eps> [27]
+ <transition_down.eps>
 File: cdf_OFF2ON.eps Graphic file (type eps)
  <cdf_OFF2ON.eps>
 File: cdf_ON2OFF.eps Graphic file (type eps)
@@ -356,7 +350,7 @@ File: cdf_ON2OFF.eps Graphic file (type eps)
 File: peak.eps Graphic file (type eps)
  <peak.eps>
 File: per.eps Graphic file (type eps)
- <per.eps>) (./conclude.tex [28] [29] [30]
+ <per.eps>) (./conclude.tex [27] [28] [29] [30]
 Chapter 6.
 ) (./acknowledgement.tex [31
 
@@ -422,4 +416,4 @@ Here is how much of TeX's memory you used:
  80 hyphenation exceptions out of 8191
  27i,17n,33p,31666b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (42 pages, 96860 bytes).
+Output written on main.dvi (42 pages, 97856 bytes).

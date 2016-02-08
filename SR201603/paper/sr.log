@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  3 FEB 2016 18:56
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.17)  8 FEB 2016 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -164,7 +164,14 @@ Class ieicej Warning: Author's name "王\tmspace +\thinmuskip {.1667em}\tmspace
 67em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}昊" doesn't 
 have a space.
 
-(./sr.aux)
+(./sr.aux
+
+LaTeX Warning: Label `systemmodel' multiply defined.
+
+
+LaTeX Warning: Label `sample' multiply defined.
+
+)
 \openout1 = `sr.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -187,35 +194,35 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 27.
-LaTeX Font Info:    Try loading font information for U+msa on input line 47.
+LaTeX Font Info:    Try loading font information for U+msa on input line 46.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 47.
+LaTeX Font Info:    Try loading font information for U+msb on input line 46.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 47.
+LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 46.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 47.
+(Font)              size <10.95> substituted on input line 46.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 47.
+(Font)              size <10.95> substituted on input line 46.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 47.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 46.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.5> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 46.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 47.
+(Font)              size <10.95> substituted on input line 46.
 
 
 Class ieicej Warning: The title page is too high. 
@@ -224,7 +231,7 @@ Class ieicej Warning: The title page is too high.
   For example, \titlepagebaselinestretch{0.9}.
 
 
-Overfull \vbox (64.16647pt too high) detected at line 47
+Overfull \vbox (111.12158pt too high) detected at line 46
  []
 
 
@@ -250,17 +257,30 @@ Overfull \vbox (10.9384pt too high) has occurred while \output is active []
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 49.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 48.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 49.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 48.
 File: database.eps Graphic file (type eps)
  <database.eps>
 File: systemmodel.eps Graphic file (type eps)
  <systemmodel.eps>
+File: cusum_image.eps Graphic file (type eps)
+ <cusum_image.eps> [2]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 73.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 134.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 73.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 134.
+File: ON2OFF.eps Graphic file (type eps)
+ <ON2OFF.eps>
+File: OFF2ON.eps Graphic file (type eps)
+
+<OFF2ON.eps>
+File: transition_up.eps Graphic file (type eps)
+ <transition_up.eps>
+File: transition_down.eps Graphic file (type eps)
+ <transition_down.eps>
+File: peak.eps Graphic file (type eps)
+ <peak.eps>
 Missing character: There is no ^^e2 in font cmr8!
 Missing character: There is no ^^80 in font cmr8!
 Missing character: There is no ^^93 in font cmr8!
@@ -268,22 +288,26 @@ Missing character: There is no ^^e2 in font cmr8!
 Missing character: There is no ^^80 in font cmr8!
 Missing character: There is no ^^93 in font cmr8!
 LaTeX Font Info:    Font shape `JT1/mc/m/it' in size <8> not available
-(Font)              Font shape `JT1/mc/m/n' tried instead on input line 96.
+(Font)              Font shape `JT1/mc/m/n' tried instead on input line 236.
 LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <8> not available
-(Font)              Font shape `JY1/mc/m/n' tried instead on input line 96.
- [2] (./sr.aux)
+(Font)              Font shape `JY1/mc/m/n' tried instead on input line 236.
+ [3] [4]
+(./sr.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 2049 strings out of 495129
- 24064 string characters out of 6182594
- 88009 words of memory out of 5000000
- 5392 multiletter control sequences out of 15000+600000
- 24487 words of font info for 98 fonts, out of 8000000 for 9000
+ 2095 strings out of 495129
+ 24530 string characters out of 6182594
+ 96009 words of memory out of 5000000
+ 5423 multiletter control sequences out of 15000+600000
+ 27216 words of font info for 107 fonts, out of 8000000 for 9000
  80 hyphenation exceptions out of 8191
- 27i,8n,26p,1332b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,16n,26p,2175b,352s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sr.dvi (2 pages, 12888 bytes).
+Output written on sr.dvi (4 pages, 30320 bytes).
